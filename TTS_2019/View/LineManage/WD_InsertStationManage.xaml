@@ -1,0 +1,64 @@
+﻿<Window x:Class="TTS_2019.View.LineManage.WD_InsertStationManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="/Images/Other/tts.png"
+        Title="后台维护系统WPF版_新增站点" 
+        Height="700" Width="770"  
+        WindowStartupLocation="CenterScreen" 
+        Loaded="Window_Loaded">
+    <!--泊靠式面板-->
+    <DockPanel LastChildFill="True">
+        <!--操作菜单-->
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" ItemHeight="80" HorizontalAlignment="Center">
+            <Button Content="重置" Style="{StaticResource   BtnPrintStyle}" Name="btnReset" Margin="20,0" Click="btn_Reset_Click"/>
+            <Button Content="保存" Style="{StaticResource  BtnSaveStyle}" Name="btnSave" Margin="20,0" Click="btn_Affirm_Click"/>
+            <Button Content="取消" Style="{StaticResource  BtnCloseStyle}" Name="btnClose" Click="btn_Cancel_Click" Margin="20,0"/>
+        </WrapPanel>
+        <!--页面布局-->
+        <Border BorderThickness="1" BorderBrush="LightGray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="14*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="新站点名称：" Grid.Row="1" Grid.Column="1"/>
+                <TextBox Grid.Row="1" Grid.Column="2" x:Name="txt_Station" SelectionChanged="txt_Station_SelectionChanged"/>
+                <TextBlock Text="省份：" Grid.Row="1" Grid.Column="4"/>
+                <ComboBox  Grid.Row="1" Grid.Column="5" x:Name="cbo_pro"/>
+                <TextBlock Text="站点简码：" Grid.Row="3" Grid.Column="1"/>
+                <TextBox  Grid.Row="3" Grid.Column="2"  x:Name="txt_short_code"/>
+                <TextBlock Text="站点拼音：" Grid.Row="3" Grid.Column="4"/>
+                <TextBox  Grid.Row="3" Grid.Column="5" x:Name="txt_full_code"/>
+                <GroupBox Header="站点（以当前所在站点为中心）" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5">
+                    <DataGrid  x:Name="dgSite"  AutoGenerateColumns="False" Background="white"
+                  CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single" 
+                  CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False" 
+                                  MouseLeftButtonDown="dgSite_MouseLeftButtonDown">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="序号"  Binding="{Binding number }" Width="1*" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="站点ID" Binding="{Binding site_id }"  Visibility="Collapsed"/>
+                            <DataGridCheckBoxColumn Header="选中否"  Width="2*" Binding="{Binding chked }" x:Name="select"/>
+                            <DataGridTextColumn Header="站点名称"  Width="5*" Binding="{Binding site_name }"/>
+                            <DataGridTextColumn Header="省份ID" Binding="{Binding pro_id }" Visibility="Collapsed"/>
+                            <DataGridTextColumn Header="省份" Binding="{Binding pro_name }" Width="5*"/>
+                            <DataGridTextColumn Header="距离" Binding="{Binding distance ,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="2*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>

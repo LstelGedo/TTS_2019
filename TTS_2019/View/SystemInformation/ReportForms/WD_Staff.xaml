@@ -1,0 +1,13 @@
+﻿<Window x:Class="TTS_2019.View.SystemInformation.ReportForms.WD_Staff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"      
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"
+        Icon="../../../Images/Other/tts.png"
+        Title="WD_Staff" 
+        WindowState="Maximized"
+         WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded" >
+    <DockPanel>
+        <Viewer:CrystalReportsViewer x:Name="CRV_Staff" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </DockPanel>
+</Window>

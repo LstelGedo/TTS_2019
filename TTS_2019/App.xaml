@@ -1,0 +1,22 @@
+﻿<Application x:Class="TTS_2019.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TTS_2019"
+             StartupUri="LoginWindow.xaml">
+    <Application.Resources>
+        <!--Resource Dictionary –资源字典-->
+        <!--所有的资源项在最终都会被整合到Resource Dictionary中的，也就是说无论是FrameworkElement的Resources,还是Window的Resources,还是Application的Resources，还是特定的ResourceDictionary中定义的resources在整个应用编译执行的时候实际上他们都在一起的作为可遍历集合共同存在于一个相对会话空间内的。 我们也提到过Resource的key是可以被允许有相同的，这样在遍历不同相对地址的Resource Dictionary时会根据StaticResource或者DynamicResource的lookup behavior来确定哪个有效。通常为了维护和灵活性的考虑，我们通常会将Resource Dictionary文件分成好几个，但在某些场合下我们只需要用其中某些资源，那么我么可以将资源从几个独立的文件中提取并合并.-->
+        <ResourceDictionary>          
+            
+            
+            <!--给应用程序添加默认资源：其实就是将默认的Resource Dictionary加入到Application的全局Resource里边。-->
+            <ResourceDictionary.MergedDictionaries>
+                <!--封装好的公共样式-->
+                <ResourceDictionary Source="Tools/Dictionary/PublicBasic.xaml"/>
+                <!--封装好的公共样式-->
+                <ResourceDictionary Source="Tools/Dictionary/ButtonsBasic.xaml"/>                
+            </ResourceDictionary.MergedDictionaries>         
+        </ResourceDictionary>
+     
+    </Application.Resources>
+</Application>

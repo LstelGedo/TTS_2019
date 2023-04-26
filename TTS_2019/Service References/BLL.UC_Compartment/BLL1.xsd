@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="UserControl_Loaded_SelectTrainSum">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTrainSumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTrainSumResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTrainType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTrainTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTrainTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectCompartmentType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectCompartmentTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectCompartmentTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectSeatType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectSeatTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectSeatTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_Selectprincipal">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectprincipalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectprincipalResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_Selectlinkman">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectlinkmanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectlinkmanResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTrain">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTrainResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectCompartment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inttrain_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectCompartmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectCompartmentResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectSeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intcar_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectSeatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectSeatResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="UserControl_Loaded_SelectPhoroResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intprincipal_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intlinkman_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strtrain_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strbottom_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtproduction_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dtexpiration_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strbiggest_pitch" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="strimage_path" nillable="true" type="q2:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="blusing_no" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bldisable" type="xs:boolean" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strrate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_InsertTrainResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertCar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_car_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strcar_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inttrain_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertCarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_InsertCarResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertCarSeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intcar_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_seat_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strseat_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_InsertCarSeatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_InsertCarSeatResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_UpdateTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intprincipal_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intlinkman_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strtrain_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strbottom_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtproduction_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dtexpiration_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strbiggest_pitch" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="strimage_path" nillable="true" type="q3:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="blusing_no" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bldisable" type="xs:boolean" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strrate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inttrain_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strOldLuJing" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTxtLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_UpdateTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_UpdateTrainResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteTrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inttrain_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteTrainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_DeleteTrainResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteCar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intcar_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteCarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_DeleteCarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteCarSeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intseat_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_DeleteCarSeatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_DeleteCarSeatResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2ee08dac-ae0e-4d97-bffa-111474180749" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="0fe94508-97f2-4a6e-8e6b-5b43d22f4dc6" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="04dd2c8e-fe77-499c-b26a-30a59bca993e" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd0" />
+    <MetadataFile FileName="UC_PowerManage.wsdl" MetadataType="Wsdl" ID="283bc808-aaea-492f-bc5c-d116853ac6cb" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?wsdl" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="74d73365-1468-4043-b5a8-d485c57cf41c" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?disco" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="71d5a80d-9f49-450b-997b-2ef75ec4703f" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

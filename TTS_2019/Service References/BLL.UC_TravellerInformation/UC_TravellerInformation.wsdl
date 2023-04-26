@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_TravellerInformation" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectCertificateType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCertificateType" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectCertificateType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCertificateTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTravellerType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerType" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTravellerType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_InsertTravellerInformation_Loaded_SelectGender_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTravellerInformation_Loaded_SelectGender" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_InsertTravellerInformation_Loaded_SelectGender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTravellerInformation_Loaded_SelectGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTraveller_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTraveller" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTraveller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Affirm_Click_InsertTraveller_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertTraveller" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Affirm_Click_InsertTraveller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertTravellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Affirm_Click_UpdateTraveller_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateTraveller" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Affirm_Click_UpdateTraveller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateTravellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Delete_Click_DelectTraveller_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Delete_Click_DelectTraveller" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_btn_Delete_Click_DelectTraveller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Delete_Click_DelectTravellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTravellerCountrySum_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerCountrySum" />
+  </wsdl:message>
+  <wsdl:message name="UC_TravellerInformation_UserControl_Loaded_SelectTravellerCountrySum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerCountrySumResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_TravellerInformation">
+    <wsdl:operation name="UserControl_Loaded_SelectCertificateType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectCertificateType" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectCertificateType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectCertificateTypeResponse" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectCertificateType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerType" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTravellerType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerTypeResponse" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTravellerType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTravellerInformation_Loaded_SelectGender">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/InsertTravellerInformation_Loaded_SelectGender" message="tns:UC_TravellerInformation_InsertTravellerInformation_Loaded_SelectGender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/InsertTravellerInformation_Loaded_SelectGenderResponse" message="tns:UC_TravellerInformation_InsertTravellerInformation_Loaded_SelectGender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTraveller">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTraveller" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTraveller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerResponse" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTraveller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertTraveller">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_InsertTraveller" message="tns:UC_TravellerInformation_btn_Affirm_Click_InsertTraveller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_InsertTravellerResponse" message="tns:UC_TravellerInformation_btn_Affirm_Click_InsertTraveller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateTraveller">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_UpdateTraveller" message="tns:UC_TravellerInformation_btn_Affirm_Click_UpdateTraveller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_UpdateTravellerResponse" message="tns:UC_TravellerInformation_btn_Affirm_Click_UpdateTraveller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Delete_Click_DelectTraveller">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Delete_Click_DelectTraveller" message="tns:UC_TravellerInformation_btn_Delete_Click_DelectTraveller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/btn_Delete_Click_DelectTravellerResponse" message="tns:UC_TravellerInformation_btn_Delete_Click_DelectTraveller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerCountrySum">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerCountrySum" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTravellerCountrySum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerCountrySumResponse" message="tns:UC_TravellerInformation_UserControl_Loaded_SelectTravellerCountrySum_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.SystemInformation.UC_TravellerInformation" type="tns:UC_TravellerInformation">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserControl_Loaded_SelectCertificateType">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectCertificateType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerType">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTravellerInformation_Loaded_SelectGender">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/InsertTravellerInformation_Loaded_SelectGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTraveller">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTraveller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertTraveller">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_InsertTraveller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateTraveller">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/btn_Affirm_Click_UpdateTraveller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Delete_Click_DelectTraveller">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/btn_Delete_Click_DelectTraveller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerCountrySum">
+      <soap:operation soapAction="http://tempuri.org/UC_TravellerInformation/UserControl_Loaded_SelectTravellerCountrySum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_TravellerInformation">
+    <wsdl:port name="BLL.SystemInformation.UC_TravellerInformation" binding="tns:BLL.SystemInformation.UC_TravellerInformation">
+      <soap:address location="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

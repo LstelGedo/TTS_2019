@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cddc9d28-a73a-4dba-b308-f912041afdea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="12d1818f-59f3-4643-9b92-0e53ed78d513" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd0" />
+    <MetadataFile FileName="UC_TravellerInformation.wsdl" MetadataType="Wsdl" ID="5e2622f5-76eb-4220-bcb6-edf648477741" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?wsdl" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="41396f8f-6edb-4a60-8459-a1457e79e68c" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="d4473aec-88f5-482c-b6ee-c491fe1dd7e8" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="bc909275-4bce-482c-87cb-37c5469df0bd" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_TravellerInformation.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

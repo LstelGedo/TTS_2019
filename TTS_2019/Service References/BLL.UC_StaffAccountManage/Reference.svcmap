@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="221c2d02-09f0-4573-bd11-e94bc17d9feb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="3aaa29f8-0710-437c-a05f-14c670cf030f" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="1110c7d2-242c-4146-844d-12b3d5c6f3e7" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="13e8db3b-2085-4c2b-b4d7-1949ea4b4ead" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?disco" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="b1b415c9-2598-4e9e-944a-ea21bcf60a21" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd1" />
+    <MetadataFile FileName="UC_StaffAccountManage.wsdl" MetadataType="Wsdl" ID="6521acdd-8911-41af-b6c2-896494ff26ee" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

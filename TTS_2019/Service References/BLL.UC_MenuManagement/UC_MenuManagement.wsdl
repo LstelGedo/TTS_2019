@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_MenuManagement" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_SelectModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_SelectModular" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_SelectModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_SelectModularResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_UserControl_Loaded_SelectPhoro_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoro" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_UserControl_Loaded_SelectPhoro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoroResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_SelectLastMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_SelectLastMenu" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_SelectLastMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_SelectLastMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_InsertMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_InsertMenu" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_InsertMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_InsertMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_UpdatetMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_UpdatetMenu" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_UpdatetMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_UpdatetMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_DeleteMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_DeleteMenu" />
+  </wsdl:message>
+  <wsdl:message name="UC_MenuManagement_frmMenuManagement_DeleteMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmMenuManagement_DeleteMenuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_MenuManagement">
+    <wsdl:operation name="frmMenuManagement_SelectModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectModular" message="tns:UC_MenuManagement_frmMenuManagement_SelectModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectModularResponse" message="tns:UC_MenuManagement_frmMenuManagement_SelectModular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/UserControl_Loaded_SelectPhoro" message="tns:UC_MenuManagement_UserControl_Loaded_SelectPhoro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/UserControl_Loaded_SelectPhoroResponse" message="tns:UC_MenuManagement_UserControl_Loaded_SelectPhoro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_SelectLastMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectLastMenu" message="tns:UC_MenuManagement_frmMenuManagement_SelectLastMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectLastMenuResponse" message="tns:UC_MenuManagement_frmMenuManagement_SelectLastMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_InsertMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_InsertMenu" message="tns:UC_MenuManagement_frmMenuManagement_InsertMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_InsertMenuResponse" message="tns:UC_MenuManagement_frmMenuManagement_InsertMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_UpdatetMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_UpdatetMenu" message="tns:UC_MenuManagement_frmMenuManagement_UpdatetMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_UpdatetMenuResponse" message="tns:UC_MenuManagement_frmMenuManagement_UpdatetMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_DeleteMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_DeleteMenu" message="tns:UC_MenuManagement_frmMenuManagement_DeleteMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MenuManagement/frmMenuManagement_DeleteMenuResponse" message="tns:UC_MenuManagement_frmMenuManagement_DeleteMenu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.SystemInformation.UC_MenuManagement" type="tns:UC_MenuManagement">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="frmMenuManagement_SelectModular">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/UserControl_Loaded_SelectPhoro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_SelectLastMenu">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/frmMenuManagement_SelectLastMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_InsertMenu">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/frmMenuManagement_InsertMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_UpdatetMenu">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/frmMenuManagement_UpdatetMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmMenuManagement_DeleteMenu">
+      <soap:operation soapAction="http://tempuri.org/UC_MenuManagement/frmMenuManagement_DeleteMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_MenuManagement">
+    <wsdl:port name="BLL.SystemInformation.UC_MenuManagement" binding="tns:BLL.SystemInformation.UC_MenuManagement">
+      <soap:address location="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_CreateLine" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectStationManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStationManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectStationManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStationManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectSite_FromSiteId_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSite_FromSiteId" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectSite_FromSiteId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSite_FromSiteIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectProvince" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertStation" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertNeighborSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertNeighborSite" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertNeighborSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertNeighborSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteStation" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteNeighborSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteNeighborSite" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteNeighborSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteNeighborSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_StopSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_StopSite" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_StopSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_StopSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_UpdateStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateStation" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_UpdateStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStation" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectDetailLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectDetailLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectDetailLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectDetailLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSite" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_SelectSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertDetailLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertDetailLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_InsertDetailLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertDetailLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteDetailLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteDetailLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_DeleteDetailLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteDetailLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_UpdateLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateLine" />
+  </wsdl:message>
+  <wsdl:message name="UC_CreateLine_UserControl_Loaded_UpdateLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateLineResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_CreateLine">
+    <wsdl:operation name="UserControl_Loaded_SelectStationManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStationManage" message="tns:UC_CreateLine_UserControl_Loaded_SelectStationManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStationManageResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectStationManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSite_FromSiteId">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSite_FromSiteId" message="tns:UC_CreateLine_UserControl_Loaded_SelectSite_FromSiteId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSite_FromSiteIdResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectSite_FromSiteId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectProvince" message="tns:UC_CreateLine_UserControl_Loaded_SelectProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectProvinceResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectProvince_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertStation" message="tns:UC_CreateLine_UserControl_Loaded_InsertStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertStationResponse" message="tns:UC_CreateLine_UserControl_Loaded_InsertStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertNeighborSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertNeighborSite" message="tns:UC_CreateLine_UserControl_Loaded_InsertNeighborSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertNeighborSiteResponse" message="tns:UC_CreateLine_UserControl_Loaded_InsertNeighborSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteStation" message="tns:UC_CreateLine_UserControl_Loaded_DeleteStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteStationResponse" message="tns:UC_CreateLine_UserControl_Loaded_DeleteStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteNeighborSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteNeighborSite" message="tns:UC_CreateLine_UserControl_Loaded_DeleteNeighborSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteNeighborSiteResponse" message="tns:UC_CreateLine_UserControl_Loaded_DeleteNeighborSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_StopSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_StopSite" message="tns:UC_CreateLine_UserControl_Loaded_StopSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_StopSiteResponse" message="tns:UC_CreateLine_UserControl_Loaded_StopSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateStation" message="tns:UC_CreateLine_UserControl_Loaded_UpdateStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateStationResponse" message="tns:UC_CreateLine_UserControl_Loaded_UpdateStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStation" message="tns:UC_CreateLine_UserControl_Loaded_SelectStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStationResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectLine" message="tns:UC_CreateLine_UserControl_Loaded_SelectLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectDetailLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectDetailLine" message="tns:UC_CreateLine_UserControl_Loaded_SelectDetailLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectDetailLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectDetailLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSite" message="tns:UC_CreateLine_UserControl_Loaded_SelectSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSiteResponse" message="tns:UC_CreateLine_UserControl_Loaded_SelectSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertLine" message="tns:UC_CreateLine_UserControl_Loaded_InsertLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_InsertLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertDetailLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertDetailLine" message="tns:UC_CreateLine_UserControl_Loaded_InsertDetailLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertDetailLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_InsertDetailLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteLine" message="tns:UC_CreateLine_UserControl_Loaded_DeleteLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_DeleteLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteDetailLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteDetailLine" message="tns:UC_CreateLine_UserControl_Loaded_DeleteDetailLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteDetailLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_DeleteDetailLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateLine" message="tns:UC_CreateLine_UserControl_Loaded_UpdateLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateLineResponse" message="tns:UC_CreateLine_UserControl_Loaded_UpdateLine_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.LineManage.UC_CreateLine" type="tns:UC_CreateLine">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserControl_Loaded_SelectStationManage">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStationManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSite_FromSiteId">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSite_FromSiteId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectProvince">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertStation">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertNeighborSite">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertNeighborSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteStation">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteNeighborSite">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteNeighborSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_StopSite">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_StopSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateStation">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectStation">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectDetailLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectDetailLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSite">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_SelectSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertDetailLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_InsertDetailLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteDetailLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_DeleteDetailLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateLine">
+      <soap:operation soapAction="http://tempuri.org/UC_CreateLine/UserControl_Loaded_UpdateLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_CreateLine">
+    <wsdl:port name="BLL.LineManage.UC_CreateLine" binding="tns:BLL.LineManage.UC_CreateLine">
+      <soap:address location="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

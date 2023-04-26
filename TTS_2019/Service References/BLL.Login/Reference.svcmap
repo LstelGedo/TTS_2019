@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ff8ee2b7-2eb6-4760-91a2-aec53b3d6987" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.Login.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Login.wsdl" MetadataType="Wsdl" ID="79dcee2c-c021-4f2e-b2a1-05944eaec3c6" SourceId="1" SourceUrl="http://localhost:51039/BLL.Login.svc?wsdl" />
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="a2ca0fd3-4f24-4c48-ac54-f82a3de70f8d" SourceId="1" SourceUrl="http://localhost:51039/BLL.Login.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="ddb38b5b-baf5-4299-a0ce-68d28d76c72d" SourceId="1" SourceUrl="http://localhost:51039/BLL.Login.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="a8be5309-f71c-4b3d-b530-abb155c463bb" SourceId="1" SourceUrl="http://localhost:51039/BLL.Login.svc?disco" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="9f590c38-5759-48fe-9192-fd2273a67c8f" SourceId="1" SourceUrl="http://localhost:51039/BLL.Login.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

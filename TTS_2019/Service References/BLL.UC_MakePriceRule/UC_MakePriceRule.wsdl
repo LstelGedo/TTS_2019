@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_MakePriceRule" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TicketTask.UC_MakePriceRule.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TicketTask.UC_MakePriceRule.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TicketTask.UC_MakePriceRule.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectFareSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectFareSection" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectFareSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectFareSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketPriceRatio_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectTicketPriceRatio" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketPriceRatio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectTicketPriceRatioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketTTPJP_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectTicketTTPJP" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketTTPJP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_SelectTicketTTPJPResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertFareSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertFareSection" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertFareSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertFareSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketPriceRatio_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertTicketPriceRatio" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketPriceRatio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertTicketPriceRatioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketTTPJP_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertTicketTTPJP" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketTTPJP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_InsertTicketTTPJPResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateFareSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateFareSection" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateFareSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateFareSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketPriceRatio_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateTicketPriceRatio" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketPriceRatio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateTicketPriceRatioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketTTPJP_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateTicketTTPJP" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketTTPJP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_UpdateTicketTTPJPResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteFareSection_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteFareSection" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteFareSection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteFareSectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketPriceRatio_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteTicketPriceRatio" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketPriceRatio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteTicketPriceRatioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketTTPJP_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteTicketTTPJP" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketTTPJP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_MakePriceRule_Loaded_DeleteTicketTTPJPResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectTrainTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectTrainTicket" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectTrainTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectTrainTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectStation" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectTicketByCarType_InputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectTicketByCarType" />
+  </wsdl:message>
+  <wsdl:message name="UC_MakePriceRule_US_Ticket_Loaded_SelectTicketByCarType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:US_Ticket_Loaded_SelectTicketByCarTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_MakePriceRule">
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectFareSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectFareSection" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectFareSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectFareSectionResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectFareSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectTicketPriceRatio">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketPriceRatio" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketPriceRatio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketPriceRatioResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketPriceRatio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectTicketTTPJP">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketTTPJP" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketTTPJP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketTTPJPResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_SelectTicketTTPJP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertFareSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertFareSection" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertFareSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertFareSectionResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertFareSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertTicketPriceRatio">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketPriceRatio" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketPriceRatio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketPriceRatioResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketPriceRatio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertTicketTTPJP">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketTTPJP" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketTTPJP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketTTPJPResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_InsertTicketTTPJP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateFareSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateFareSection" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateFareSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateFareSectionResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateFareSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateTicketPriceRatio">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketPriceRatio" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketPriceRatio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketPriceRatioResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketPriceRatio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateTicketTTPJP">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketTTPJP" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketTTPJP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketTTPJPResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_UpdateTicketTTPJP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteFareSection">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteFareSection" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteFareSection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteFareSectionResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteFareSection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteTicketPriceRatio">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketPriceRatio" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketPriceRatio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketPriceRatioResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketPriceRatio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteTicketTTPJP">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketTTPJP" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketTTPJP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketTTPJPResponse" message="tns:UC_MakePriceRule_US_MakePriceRule_Loaded_DeleteTicketTTPJP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectTrainTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTrainTicket" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectTrainTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTrainTicketResponse" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectTrainTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectStation" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectStationResponse" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectTicketByCarType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTicketByCarType" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectTicketByCarType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTicketByCarTypeResponse" message="tns:UC_MakePriceRule_US_Ticket_Loaded_SelectTicketByCarType_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.TicketTask.UC_MakePriceRule" type="tns:UC_MakePriceRule">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectFareSection">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectFareSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectTicketPriceRatio">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketPriceRatio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_SelectTicketTTPJP">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_SelectTicketTTPJP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertFareSection">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertFareSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertTicketPriceRatio">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketPriceRatio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_InsertTicketTTPJP">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_InsertTicketTTPJP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateFareSection">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateFareSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateTicketPriceRatio">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketPriceRatio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_UpdateTicketTTPJP">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_UpdateTicketTTPJP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteFareSection">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteFareSection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteTicketPriceRatio">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketPriceRatio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_MakePriceRule_Loaded_DeleteTicketTTPJP">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_MakePriceRule_Loaded_DeleteTicketTTPJP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectTrainTicket">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTrainTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectStation">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="US_Ticket_Loaded_SelectTicketByCarType">
+      <soap:operation soapAction="http://tempuri.org/UC_MakePriceRule/US_Ticket_Loaded_SelectTicketByCarType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_MakePriceRule">
+    <wsdl:port name="BLL.TicketTask.UC_MakePriceRule" binding="tns:BLL.TicketTask.UC_MakePriceRule">
+      <soap:address location="http://localhost:51039/BLL.TicketTask.UC_MakePriceRule.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

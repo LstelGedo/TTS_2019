@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_Compartment" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrainSum_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainSum" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrainSum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainSumResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrainType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainType" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrainType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectCompartmentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCompartmentType" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectCompartmentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCompartmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectSeatType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSeatType" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectSeatType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSeatTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_Selectprincipal_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_Selectprincipal" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_Selectprincipal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectprincipalResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_Selectlinkman_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_Selectlinkman" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_Selectlinkman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectlinkmanResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrain" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectCompartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCompartment" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectCompartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectCompartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectSeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSeat" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectSeat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectSeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectPhoro_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoro" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_SelectPhoro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoroResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertTrain" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertCar" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertCarSeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertCarSeat" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_InsertCarSeat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_InsertCarSeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_UpdateTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateTrain" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_UpdateTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_UpdateTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteTrain" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteCar" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteCarSeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteCarSeat" />
+  </wsdl:message>
+  <wsdl:message name="UC_Compartment_UserControl_Loaded_DeleteCarSeat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_DeleteCarSeatResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_Compartment">
+    <wsdl:operation name="UserControl_Loaded_SelectTrainSum">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainSum" message="tns:UC_Compartment_UserControl_Loaded_SelectTrainSum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainSumResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectTrainSum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrainType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainType" message="tns:UC_Compartment_UserControl_Loaded_SelectTrainType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainTypeResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectTrainType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectCompartmentType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartmentType" message="tns:UC_Compartment_UserControl_Loaded_SelectCompartmentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartmentTypeResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectCompartmentType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSeatType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeatType" message="tns:UC_Compartment_UserControl_Loaded_SelectSeatType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeatTypeResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectSeatType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_Selectprincipal">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_Selectprincipal" message="tns:UC_Compartment_UserControl_Loaded_Selectprincipal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectprincipalResponse" message="tns:UC_Compartment_UserControl_Loaded_Selectprincipal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_Selectlinkman">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_Selectlinkman" message="tns:UC_Compartment_UserControl_Loaded_Selectlinkman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectlinkmanResponse" message="tns:UC_Compartment_UserControl_Loaded_Selectlinkman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrain" message="tns:UC_Compartment_UserControl_Loaded_SelectTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectCompartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartment" message="tns:UC_Compartment_UserControl_Loaded_SelectCompartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartmentResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectCompartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeat" message="tns:UC_Compartment_UserControl_Loaded_SelectSeat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeatResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectSeat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectPhoro" message="tns:UC_Compartment_UserControl_Loaded_SelectPhoro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectPhoroResponse" message="tns:UC_Compartment_UserControl_Loaded_SelectPhoro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertTrain" message="tns:UC_Compartment_UserControl_Loaded_InsertTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertTrainResponse" message="tns:UC_Compartment_UserControl_Loaded_InsertTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCar" message="tns:UC_Compartment_UserControl_Loaded_InsertCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCarResponse" message="tns:UC_Compartment_UserControl_Loaded_InsertCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertCarSeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCarSeat" message="tns:UC_Compartment_UserControl_Loaded_InsertCarSeat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCarSeatResponse" message="tns:UC_Compartment_UserControl_Loaded_InsertCarSeat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_UpdateTrain" message="tns:UC_Compartment_UserControl_Loaded_UpdateTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_UpdateTrainResponse" message="tns:UC_Compartment_UserControl_Loaded_UpdateTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteTrain" message="tns:UC_Compartment_UserControl_Loaded_DeleteTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteTrainResponse" message="tns:UC_Compartment_UserControl_Loaded_DeleteTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCar" message="tns:UC_Compartment_UserControl_Loaded_DeleteCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCarResponse" message="tns:UC_Compartment_UserControl_Loaded_DeleteCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteCarSeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCarSeat" message="tns:UC_Compartment_UserControl_Loaded_DeleteCarSeat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCarSeatResponse" message="tns:UC_Compartment_UserControl_Loaded_DeleteCarSeat_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.TrainOrder.UC_Compartment" type="tns:UC_Compartment">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserControl_Loaded_SelectTrainSum">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainSum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrainType">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrainType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectCompartmentType">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSeatType">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeatType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_Selectprincipal">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_Selectprincipal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_Selectlinkman">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_Selectlinkman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrain">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectCompartment">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectCompartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectSeat">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectSeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_SelectPhoro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertTrain">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertCar">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_InsertCarSeat">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_InsertCarSeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_UpdateTrain">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_UpdateTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteTrain">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteCar">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_DeleteCarSeat">
+      <soap:operation soapAction="http://tempuri.org/UC_Compartment/UserControl_Loaded_DeleteCarSeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_Compartment">
+    <wsdl:port name="BLL.TrainOrder.UC_Compartment" binding="tns:BLL.TrainOrder.UC_Compartment">
+      <soap:address location="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

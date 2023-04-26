@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="UserControl_Loaded_SelectStaff">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectStaffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectStaffResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PicturePath">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PicturePathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PicturePathResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectPhoroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectGender">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectGenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertStaffInformation_Loaded_SelectGenderResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectWorkStatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectWorkStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertStaffInformation_Loaded_SelectWorkStatusResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectEmployeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intfid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectEmployeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectEmployeeTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectPost">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStaffInformation_Loaded_SelectPostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertStaffInformation_Loaded_SelectPostResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_InsertStaff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_employee_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_work_status_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_branch_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strstaff_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strstaff_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intas_gender_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strid_card" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtmbirth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strphone_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="straddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stre_mail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtmentry_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dtmdeparture_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="bloperator_no" type="xs:boolean" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="bytepicture" nillable="true" type="q1:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_InsertStaffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Affirm_Click_InsertStaffResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_UpdateStaff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_employee_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_work_status_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_branch_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strstaff_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strstaff_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intas_gender_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strid_card" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtmbirth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strphone_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="straddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stre_mail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtmentry_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dtmdeparture_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="bloperator_no" type="xs:boolean" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="bytepicture" nillable="true" type="q2:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="strnote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intstaff_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strOldLuJing" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTxtLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_UpdateStaffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Affirm_Click_UpdateStaffResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Delete_Click_DelectStaff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intstaff_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strFileName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Delete_Click_DelectStaffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Delete_Click_DelectStaffResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectWorkZheng">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intStaffID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectWorkZhengResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectWorkZhengResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

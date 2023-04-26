@@ -1,0 +1,67 @@
+﻿<Window x:Class="TTS_2019.View.SystemInformation.WD_UpdateLimitsOfPower"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="后台维护系统WPF版_修改权限" 
+        Icon="/Images/Other/tts.png" 
+        Height="700" Width="800" 
+        WindowStartupLocation="CenterScreen" 
+        Loaded="Window_Loaded">
+    <!--泊靠式面板-->
+    <DockPanel LastChildFill="True">
+        <!--底部操作按钮-->
+        <!--操作菜单-->
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" ItemHeight="80" HorizontalAlignment="Center">
+            <Button Content="保存" Style="{StaticResource  BtnSaveStyle}" Name="btnSave" Margin="20,0" Click="btn_Save_Click"/>
+            <Button Content="取消" Style="{StaticResource  BtnCloseStyle}" Name="btnClose" Click="btn_Close_Click" Margin="20,0"/>
+        </WrapPanel>
+        <!--页面内容-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="11*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="24"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="权限组：" Grid.Row="1" Grid.Column="1"/>
+                <TextBox Grid.Row="1" Grid.Column="2" x:Name="txt_Name" />
+                <TextBlock Text="备注：" Grid.Row="1" Grid.Column="4"/>
+                <TextBox  Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="3" x:Name="txt_Remark" />
+            </Grid>
+            <GroupBox Header="操作模块" Grid.Row="1">
+                <DataGrid x:Name="dgModel" AutoGenerateColumns="False" Background="white"
+                  CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single" 
+                  CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False">
+                    <DataGrid.Columns >
+                        <DataGridTextColumn Header="序号"  Binding="{Binding number }" Width="1*" IsReadOnly="True" />
+                        <DataGridTextColumn Header="模块明细ID"  Visibility="Collapsed" Binding="{Binding modular_detail_id}" />
+                        <DataGridTextColumn Header="具体操作ID"  Visibility="Collapsed" Binding="{Binding modular_id}" />
+                        <DataGridCheckBoxColumn Header="选择" Binding="{Binding chked}" x:Name="select" Width="1*"/>
+                        <DataGridTextColumn Header="模块名称"   Binding="{Binding name }" Width="6*" />
+                        <DataGridTextColumn Header="模块代码"   Binding="{Binding code }" Width="6*" />
+                        <DataGridCheckBoxColumn Header="查询"   Binding="{Binding SelectID }" Width="1*"/>
+                        <DataGridCheckBoxColumn Header="新增"   Binding="{Binding InsertID }" Width="1*"/>
+                        <DataGridCheckBoxColumn Header="修改"   Binding="{Binding UpdateID }" Width="1*"/>
+                        <DataGridCheckBoxColumn Header="删除"   Binding="{Binding DeleteID }" Width="1*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+        </Grid>
+    </DockPanel>
+</Window>
+

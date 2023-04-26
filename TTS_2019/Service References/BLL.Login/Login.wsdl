@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Login" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.Login.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.Login.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.Login.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_SelectLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_SelectLogin" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_SelectLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_SelectLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_UserControl_Loaded_SelectTrainSum_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainSum" />
+  </wsdl:message>
+  <wsdl:message name="Login_UserControl_Loaded_SelectTrainSum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTrainSumResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_UserControl_Loaded_SelectTravellerCountrySum_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerCountrySum" />
+  </wsdl:message>
+  <wsdl:message name="Login_UserControl_Loaded_SelectTravellerCountrySum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectTravellerCountrySumResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_SelectModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_SelectModular" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_SelectModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_SelectModularResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_Select_NotInModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_Select_NotInModular" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_Select_NotInModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_Select_NotInModularResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_Select_Picture_InputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_Select_Picture" />
+  </wsdl:message>
+  <wsdl:message name="Login_frmLogin_btn_Login_Click_Select_Picture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:frmLogin_btn_Login_Click_Select_PictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="Login_Main1_SelectAllModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:Main1_SelectAllModular" />
+  </wsdl:message>
+  <wsdl:message name="Login_Main1_SelectAllModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Main1_SelectAllModularResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Login">
+    <wsdl:operation name="frmLogin_btn_Login_Click_SelectLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectLogin" message="tns:Login_frmLogin_btn_Login_Click_SelectLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectLoginResponse" message="tns:Login_frmLogin_btn_Login_Click_SelectLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrainSum">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/UserControl_Loaded_SelectTrainSum" message="tns:Login_UserControl_Loaded_SelectTrainSum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/UserControl_Loaded_SelectTrainSumResponse" message="tns:Login_UserControl_Loaded_SelectTrainSum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerCountrySum">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/UserControl_Loaded_SelectTravellerCountrySum" message="tns:Login_UserControl_Loaded_SelectTravellerCountrySum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/UserControl_Loaded_SelectTravellerCountrySumResponse" message="tns:Login_UserControl_Loaded_SelectTravellerCountrySum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_SelectModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectModular" message="tns:Login_frmLogin_btn_Login_Click_SelectModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectModularResponse" message="tns:Login_frmLogin_btn_Login_Click_SelectModular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_Select_NotInModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_NotInModular" message="tns:Login_frmLogin_btn_Login_Click_Select_NotInModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_NotInModularResponse" message="tns:Login_frmLogin_btn_Login_Click_Select_NotInModular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_Select_Picture">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_Picture" message="tns:Login_frmLogin_btn_Login_Click_Select_Picture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_PictureResponse" message="tns:Login_frmLogin_btn_Login_Click_Select_Picture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Main1_SelectAllModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/Login/Main1_SelectAllModular" message="tns:Login_Main1_SelectAllModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Login/Main1_SelectAllModularResponse" message="tns:Login_Main1_SelectAllModular_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.Login" type="tns:Login">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="frmLogin_btn_Login_Click_SelectLogin">
+      <soap:operation soapAction="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTrainSum">
+      <soap:operation soapAction="http://tempuri.org/Login/UserControl_Loaded_SelectTrainSum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectTravellerCountrySum">
+      <soap:operation soapAction="http://tempuri.org/Login/UserControl_Loaded_SelectTravellerCountrySum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_SelectModular">
+      <soap:operation soapAction="http://tempuri.org/Login/frmLogin_btn_Login_Click_SelectModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_Select_NotInModular">
+      <soap:operation soapAction="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_NotInModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="frmLogin_btn_Login_Click_Select_Picture">
+      <soap:operation soapAction="http://tempuri.org/Login/frmLogin_btn_Login_Click_Select_Picture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Main1_SelectAllModular">
+      <soap:operation soapAction="http://tempuri.org/Login/Main1_SelectAllModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Login">
+    <wsdl:port name="BLL.Login" binding="tns:BLL.Login">
+      <soap:address location="http://localhost:51039/BLL.Login.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

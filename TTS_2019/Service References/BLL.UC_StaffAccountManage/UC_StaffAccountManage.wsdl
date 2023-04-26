@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_StaffAccountManage" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_StaffAccountManage_UserControl_Loaded_SelectStaffAccountManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStaffAccountManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_UserControl_Loaded_SelectStaffAccountManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStaffAccountManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_SelectStaffManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_SelectStaffManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_SelectStaffManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_SelectStaffManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_SelectUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_SelectUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_SelectUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_SelectUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_InsertStaffAccountManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertStaffAccountManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_InsertStaffAccountManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertStaffAccountManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_USelectStaffManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_USelectStaffManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_Window_Loaded_USelectStaffManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_USelectStaffManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_UpdateStaffAccountManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateStaffAccountManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_UpdateStaffAccountManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateStaffAccountManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_DeleteStaffAccountManage_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_DeleteStaffAccountManage" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btn_Affirm_Click_DeleteStaffAccountManage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_DeleteStaffAccountManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btnSave_Click_SeleteStaffId_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnSave_Click_SeleteStaffId" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btnSave_Click_SeleteStaffId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnSave_Click_SeleteStaffIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btnSave_Click_SeletePGroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:btnSave_Click_SeletePGroupId" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffAccountManage_btnSave_Click_SeletePGroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btnSave_Click_SeletePGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_StaffAccountManage">
+    <wsdl:operation name="UserControl_Loaded_SelectStaffAccountManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/UserControl_Loaded_SelectStaffAccountManage" message="tns:UC_StaffAccountManage_UserControl_Loaded_SelectStaffAccountManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/UserControl_Loaded_SelectStaffAccountManageResponse" message="tns:UC_StaffAccountManage_UserControl_Loaded_SelectStaffAccountManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_SelectStaffManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectStaffManage" message="tns:UC_StaffAccountManage_Window_Loaded_SelectStaffManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectStaffManageResponse" message="tns:UC_StaffAccountManage_Window_Loaded_SelectStaffManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_SelectUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectUserGroup" message="tns:UC_StaffAccountManage_Window_Loaded_SelectUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectUserGroupResponse" message="tns:UC_StaffAccountManage_Window_Loaded_SelectUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertStaffAccountManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_InsertStaffAccountManage" message="tns:UC_StaffAccountManage_btn_Affirm_Click_InsertStaffAccountManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_InsertStaffAccountManageResponse" message="tns:UC_StaffAccountManage_btn_Affirm_Click_InsertStaffAccountManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_USelectStaffManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_USelectStaffManage" message="tns:UC_StaffAccountManage_Window_Loaded_USelectStaffManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_USelectStaffManageResponse" message="tns:UC_StaffAccountManage_Window_Loaded_USelectStaffManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateStaffAccountManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_UpdateStaffAccountManage" message="tns:UC_StaffAccountManage_btn_Affirm_Click_UpdateStaffAccountManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_UpdateStaffAccountManageResponse" message="tns:UC_StaffAccountManage_btn_Affirm_Click_UpdateStaffAccountManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_DeleteStaffAccountManage">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_DeleteStaffAccountManage" message="tns:UC_StaffAccountManage_btn_Affirm_Click_DeleteStaffAccountManage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_DeleteStaffAccountManageResponse" message="tns:UC_StaffAccountManage_btn_Affirm_Click_DeleteStaffAccountManage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnSave_Click_SeleteStaffId">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeleteStaffId" message="tns:UC_StaffAccountManage_btnSave_Click_SeleteStaffId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeleteStaffIdResponse" message="tns:UC_StaffAccountManage_btnSave_Click_SeleteStaffId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btnSave_Click_SeletePGroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeletePGroupId" message="tns:UC_StaffAccountManage_btnSave_Click_SeletePGroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeletePGroupIdResponse" message="tns:UC_StaffAccountManage_btnSave_Click_SeletePGroupId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.SystemInformation.UC_StaffAccountManage" type="tns:UC_StaffAccountManage">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserControl_Loaded_SelectStaffAccountManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/UserControl_Loaded_SelectStaffAccountManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_SelectStaffManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectStaffManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_SelectUserGroup">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_SelectUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertStaffAccountManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_InsertStaffAccountManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_USelectStaffManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/Window_Loaded_USelectStaffManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateStaffAccountManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_UpdateStaffAccountManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_DeleteStaffAccountManage">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/btn_Affirm_Click_DeleteStaffAccountManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnSave_Click_SeleteStaffId">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeleteStaffId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btnSave_Click_SeletePGroupId">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffAccountManage/btnSave_Click_SeletePGroupId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_StaffAccountManage">
+    <wsdl:port name="BLL.SystemInformation.UC_StaffAccountManage" binding="tns:BLL.SystemInformation.UC_StaffAccountManage">
+      <soap:address location="http://localhost:51039/BLL.SystemInformation.UC_StaffAccountManage.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

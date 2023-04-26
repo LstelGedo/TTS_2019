@@ -1,0 +1,148 @@
+﻿<Window x:Class="TTS_2019.View.TrainOrder.WD_InsertCarInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TTS_2019.View.TrainOrder"
+        mc:Ignorable="d"
+        Icon="/Images/Other/tts.png"
+        Title="后台维护系统WPF版_新增车辆" 
+        Height="630" Width="1000" 
+        WindowStartupLocation="CenterScreen" 
+        Loaded="TrainOrder_Loaded" 
+        Visibility="Visible" 
+        ResizeMode="NoResize" >
+    <DockPanel LastChildFill="True" Margin="0,0,0,0">
+        <!--操作菜单-->
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" ItemHeight="80" HorizontalAlignment="Center">
+            <Button Content="重置" Style="{StaticResource   BtnPrintStyle}" Name="btnReset" Margin="20,0" />
+            <Button Content="保存" Style="{StaticResource  BtnSaveStyle}" Name="btnSave" Margin="20,0" Click="btn_Affirm_Click"/>
+            <Button Content="取消" Style="{StaticResource  BtnCloseStyle}" Name="btnClose" Click="btn_Cancel_Click" Margin="20,0"/>
+        </WrapPanel>
+        <Border>
+            <Grid Margin="0,-1,0,-9">              
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <GroupBox  Grid.Column="0" Header="车辆信息" Grid.RowSpan="2" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="23*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="车牌号：" Grid.Column="1" Grid.Row="0" Padding="5"/>
+                        <TextBox Grid.Column="2" Grid.Row="0" x:Name="txt_train_number"/>
+                        <TextBlock Text="列车类型：" Grid.Column="4" Grid.Row="0"/>
+                        <ComboBox Grid.Column="5" Grid.Row="0" x:Name="cbo_TrainType" />
+                        <TextBlock Text="车底号："   Grid.Column="1"  Grid.Row="2"/>
+                        <TextBox Grid.Column="2" Grid.Row="2" x:Name="txt_bottom_number"/>
+                        <TextBlock Text="车厢最大节：" Grid.Column="4"  Grid.Row="2"/>
+                        <TextBox Grid.Column="5"  Grid.Row="2" x:Name="txt_BiggestNumber" TextChanged="txt_BiggestNumber_TextChange"/>
+                        <TextBlock Text="紧急联系人：" Grid.Column="1"  Grid.Row="4"/>
+                        <ComboBox x:Name="cbo_linkman" Grid.Row="4" Grid.Column="2" />
+                        <TextBlock Text="负责人："  Grid.Row="4" Grid.Column="4" />
+                        <ComboBox Grid.Row="4" Grid.Column="5" x:Name="cbo_principal"/>
+                        <TextBlock Text="列车速度：" Grid.Column="1"  Grid.Row="6"/>
+                        <TextBox Grid.Column="2" Grid.Row="6" x:Name="txt_Rate"/>
+                        <TextBlock Text="备注：" Grid.Column="1"  Grid.Row="8"/>
+                        <TextBox Grid.Column="2" Grid.Row="8" x:Name="txt_Remark" Grid.ColumnSpan="4" />                        
+                        <TextBlock Text="图片路径："  Grid.Row="10" Grid.Column="1" />
+                        <TextBox Grid.Row="10" Grid.Column="2" x:Name="txt_Location" Grid.ColumnSpan="4" />
+                        <!--操作菜单-->
+                        <WrapPanel Grid.Row="12" Grid.Column="4" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Content="浏览" Style="{StaticResource BtnInsertStyle}" Click="btn_Open_Click" Margin="5,0"/>
+                            <Button Content="清空" Style="{StaticResource BtnDeleteStyle}" Click="btn_Clean_Click" Margin="5,0"/>                          
+                        </WrapPanel>                      
+                        <DockPanel Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="6">
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" x:Name="img_pictrue"/>
+                        </DockPanel>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Header="车厢信息" Grid.Column="1">
+                    <Grid Margin="10,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="0.1*"/>                         
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="23*"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="23*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="车厢个数：" Grid.Column="0" Grid.Row="0"/>
+                        <TextBox Grid.Column="1" Grid.Row="0" x:Name="txt_CompartmentNumber" SelectionChanged="txt_CompartmentNumber_SelectionChanged"/>
+                        <Button Content="新增车厢" Grid.Column="4" Style="{StaticResource BtnInsertStyle}" Click="btn_InsertCar_Click" Width="90"/>                        
+                        <DataGrid x:Name="dgCompartment" IsReadOnly="False" 
+                                  AutoGenerateColumns="False" Background="white" CanUserResizeColumns="False" CanUserResizeRows="False" 
+                                  SelectionMode="Single" Grid.Row="2" CanUserReorderColumns="False" AlternationCount="2" 
+                                  RowHeaderWidth="0" CanUserAddRows="False" Grid.ColumnSpan="4" MouseUp="dgCompartment_MouseUp">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="车厢编号" Binding="{Binding car_number }" Width="1.5*"/>
+                                <DataGridTextColumn Header="车厢ID" Visibility="Collapsed" Binding="{Binding car_id}"/>
+                                <DataGridComboBoxColumn Header="车厢类型" x:Name="CarType" DisplayMemberPath="{Binding CarType}" SelectedValuePath="{Binding CarTypeID}" 
+                                   TextBinding="{Binding CarType}" SelectedValueBinding="{Binding CarTypeID}" Width="2*" />
+                                <DataGridTextColumn Header="车厢备注"  Binding="{Binding note }" Width="5*"/>
+                                <DataGridTemplateColumn Header="删除" Width="1*">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="btn_DeleteCar" Style="{StaticResource BtnDeleteStyle}" Foreground="Red" Click="btn_DeleteCar_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>                      
+                        <TextBlock Text="座位个数：" Grid.Row="3"/>
+                        <TextBox Grid.Column="1" Grid.Row="3" x:Name="txt_SeatNumber"/>
+                        <Button Content="新增座位" Grid.Column="3" Grid.Row="3" Style="{StaticResource BtnInsertStyle}" Click="btn_InsertSeat_Click" Width="90"/>
+                        <DataGrid x:Name="dgSeat" IsReadOnly="True" AutoGenerateColumns="False" Background="white"
+                  CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single" Grid.Row="5" Grid.ColumnSpan="4"
+                  CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False"
+                        VerticalAlignment="Top"  Grid.RowSpan="11">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="座位编号" Binding="{Binding seat_number }" Width="2*"/>
+                                <DataGridTextColumn Header="座位ID" Visibility="Collapsed" Binding="{Binding seat_id}" Width="120"/>
+                                <DataGridTextColumn  Header="座位类型ID"  Visibility="Collapsed" Binding="{Binding as_seat_type_id}" />
+                                <DataGridTextColumn  Header="座位类型" Width="2*" Binding="{Binding seat_type}"/>
+                                <DataGridTemplateColumn Header="删除" Width="0.5*">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="btn_DeleteSeat" Style="{StaticResource BtnDeleteStyle}" Foreground="Red" Click="btn_DeleteSeat_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>

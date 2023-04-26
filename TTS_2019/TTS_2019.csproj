@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FCEB6A5-ADE1-4C73-8C43-6EDAB043B7EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTS_2019</RootNamespace>
+    <AssemblyName>TTS_2019</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TTS_2019.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFVisifire.Charts, Version=5.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WPFVisifire.Charts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow1.xaml.cs">
+      <DependentUpon>MainWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow2.xaml.cs">
+      <DependentUpon>MainWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow3.xaml.cs">
+      <DependentUpon>MainWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow4.xaml.cs">
+      <DependentUpon>MainWindow4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.Login\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.PublicFunction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_CarOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_Compartment\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_CreateLine\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_MakePriceRule\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_MenuManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_PowerManage\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_StaffAccountManage\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_StaffInformation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_TravellerInformation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL.UC_UpdatePassword\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Controls\AutoComplete.xaml.cs">
+      <DependentUpon>AutoComplete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Controls\Pager.xaml.cs">
+      <DependentUpon>Pager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Controls\UCTabItemWithClose.xaml.cs">
+      <DependentUpon>UCTabItemWithClose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Utils\CheckIDCardGetDiQu.cs" />
+    <Compile Include="Tools\Utils\combobox.cs" />
+    <Compile Include="Tools\Utils\ConvertImageAndByte.cs" />
+    <Compile Include="Tools\Utils\DMButton.cs" />
+    <Compile Include="Tools\Utils\ExportExcel.cs" />
+    <Compile Include="Tools\Utils\ExportToExcel.cs" />
+    <Compile Include="Tools\Utils\GetChildObjects.cs" />
+    <Compile Include="Tools\Utils\ImportToExcel.cs" />
+    <Compile Include="Tools\Utils\IniFiles.cs" />
+    <Compile Include="Tools\Utils\PublicStaticMothd.cs" />
+    <Compile Include="View\DataStatistics\UC_SaleStatistics.xaml.cs">
+      <DependentUpon>UC_SaleStatistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataStatistics\UC_SitePeopleStream.xaml.cs">
+      <DependentUpon>UC_SitePeopleStream.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataStatistics\UC_WebShopTicketNumber.xaml.cs">
+      <DependentUpon>UC_WebShopTicketNumber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\UC_CreateLine.xaml.cs">
+      <DependentUpon>UC_CreateLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\UC_CreateLines.xaml.cs">
+      <DependentUpon>UC_CreateLines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\UC_StationManage.xaml.cs">
+      <DependentUpon>UC_StationManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\WD_ChoiceLine.xaml.cs">
+      <DependentUpon>WD_ChoiceLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\WD_InsertCreateLine.xaml.cs">
+      <DependentUpon>WD_InsertCreateLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\WD_InsertStationManage.xaml.cs">
+      <DependentUpon>WD_InsertStationManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LineManage\WD_UpdateStationManage.xaml.cs">
+      <DependentUpon>WD_UpdateStationManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\WD_Traveller.xaml.cs">
+      <DependentUpon>WD_Traveller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\CRP_Staff.cs">
+      <DependentUpon>CRP_Staff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\CRP_Traveller.cs">
+      <DependentUpon>CRP_Traveller.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\DS_TTS.cs">
+      <DependentUpon>DS_TTS.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\DS_TTS.Designer.cs">
+      <DependentUpon>DS_TTS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="View\SystemInformation\ReportForms\WD_Staff.xaml.cs">
+      <DependentUpon>WD_Staff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_MenuManagement.xaml.cs">
+      <DependentUpon>UC_MenuManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_PowerManage.xaml.cs">
+      <DependentUpon>UC_PowerManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_StaffAccountManage.xaml.cs">
+      <DependentUpon>UC_StaffAccountManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_StaffInformation.xaml.cs">
+      <DependentUpon>UC_StaffInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_SystemOperateLog.xaml.cs">
+      <DependentUpon>UC_SystemOperateLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_UpdatePassword.xaml.cs">
+      <DependentUpon>UC_UpdatePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\UC_TravellerInformation.xaml.cs">
+      <DependentUpon>UC_TravellerInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_ImportStaffAccount.xaml.cs">
+      <DependentUpon>WD_ImportStaffAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_InsertLimitsOfPower.xaml.cs">
+      <DependentUpon>WD_InsertLimitsOfPower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_InsertOrUpdateMenu.xaml.cs">
+      <DependentUpon>WD_InsertOrUpdateMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_InsertStaffAccountManage.xaml.cs">
+      <DependentUpon>WD_InsertStaffAccountManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_InsertStaffInformation.xaml.cs">
+      <DependentUpon>WD_InsertStaffInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_InsertOrUpdateTraveller.xaml.cs">
+      <DependentUpon>WD_InsertOrUpdateTraveller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_UpdateLimitsOfPower.xaml.cs">
+      <DependentUpon>WD_UpdateLimitsOfPower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_UpdateStaffAccountManage.xaml.cs">
+      <DependentUpon>WD_UpdateStaffAccountManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemInformation\WD_UpdateStaffInformation.xaml.cs">
+      <DependentUpon>WD_UpdateStaffInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\UC_Ticket.xaml.cs">
+      <DependentUpon>UC_Ticket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\UC_TicketDetails.xaml.cs">
+      <DependentUpon>UC_TicketDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\UC_TicketPrice.xaml.cs">
+      <DependentUpon>UC_TicketPrice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\WD_InsertFareSection.xaml.cs">
+      <DependentUpon>WD_InsertFareSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\WD_InsertPriceRatio.xaml.cs">
+      <DependentUpon>WD_InsertPriceRatio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TicketTask\WD_InsertTTPJP.xaml.cs">
+      <DependentUpon>WD_InsertTTPJP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\UC_CarOrder.xaml.cs">
+      <DependentUpon>UC_CarOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\UC_Compartment.xaml.cs">
+      <DependentUpon>UC_Compartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\WD_ChoiceTrain.xaml.cs">
+      <DependentUpon>WD_ChoiceTrain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\WD_InsertCarInformation.xaml.cs">
+      <DependentUpon>WD_InsertCarInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\WD_InsertCarOrder.xaml.cs">
+      <DependentUpon>WD_InsertCarOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\WD_UpdateCarInformation.xaml.cs">
+      <DependentUpon>WD_UpdateCarInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainOrder\WD_UpdateCarOrder.xaml.cs">
+      <DependentUpon>WD_UpdateCarOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_FirstPage.xaml.cs">
+      <DependentUpon>UC_FirstPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MainWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Controls\AutoComplete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Controls\Pager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Controls\UCTabItemWithClose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Dictionary\ButtonsBasic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Dictionary\PublicBasic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataStatistics\UC_SaleStatistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataStatistics\UC_SitePeopleStream.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataStatistics\UC_WebShopTicketNumber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\UC_CreateLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\UC_CreateLines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\UC_StationManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\WD_ChoiceLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\WD_InsertCreateLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\WD_InsertStationManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LineManage\WD_UpdateStationManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\ReportForms\WD_Traveller.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\ReportForms\WD_Staff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_MenuManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_PowerManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_StaffAccountManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_StaffInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_SystemOperateLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_UpdatePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\UC_TravellerInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_ImportStaffAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_InsertLimitsOfPower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_InsertOrUpdateMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_InsertStaffAccountManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_InsertStaffInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_InsertOrUpdateTraveller.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_UpdateLimitsOfPower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_UpdateStaffAccountManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SystemInformation\WD_UpdateStaffInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\UC_Ticket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\UC_TicketDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\UC_TicketPrice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\WD_InsertFareSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\WD_InsertPriceRatio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TicketTask\WD_InsertTTPJP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\UC_CarOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\UC_Compartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\WD_ChoiceTrain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\WD_InsertCarInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\WD_InsertCarOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\WD_UpdateCarInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TrainOrder\WD_UpdateCarOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UC_FirstPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemInformation\ReportForms\CRP_Staff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_Staff.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemInformation\ReportForms\CRP_Traveller.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRP_Traveller.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\BLL.Login\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.Login\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.Login\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.Login\Login.wsdl" />
+    <None Include="Service References\BLL.PublicFunction\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.PublicFunction\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.PublicFunction\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.PublicFunction\PublicFunction.wsdl" />
+    <None Include="Service References\BLL.UC_CarOrder\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CarOrder\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CarOrder\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CarOrder\UC_CarOrder.wsdl" />
+    <None Include="Service References\BLL.UC_Compartment\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_Compartment\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_Compartment\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_Compartment\BLL3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_Compartment\UC_Compartment.wsdl" />
+    <None Include="Service References\BLL.UC_CreateLine\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CreateLine\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CreateLine\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_CreateLine\UC_CreateLine.wsdl" />
+    <None Include="Service References\BLL.UC_MakePriceRule\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MakePriceRule\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MakePriceRule\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MakePriceRule\UC_MakePriceRule.wsdl" />
+    <None Include="Service References\BLL.UC_MenuManagement\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MenuManagement\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MenuManagement\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MenuManagement\BLL3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_MenuManagement\UC_MenuManagement.wsdl" />
+    <None Include="Service References\BLL.UC_PowerManage\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_PowerManage\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_PowerManage\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_PowerManage\UC_PowerManage.wsdl" />
+    <None Include="Service References\BLL.UC_StaffAccountManage\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffAccountManage\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffAccountManage\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffAccountManage\UC_StaffAccountManage.wsdl" />
+    <None Include="Service References\BLL.UC_StaffInformation\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffInformation\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffInformation\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffInformation\BLL3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_StaffInformation\UC_StaffInformation.wsdl" />
+    <None Include="Service References\BLL.UC_TravellerInformation\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_TravellerInformation\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_TravellerInformation\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_TravellerInformation\UC_TravellerInformation.wsdl" />
+    <None Include="Service References\BLL.UC_UpdatePassword\BLL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_UpdatePassword\BLL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_UpdatePassword\BLL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL.UC_UpdatePassword\UC_UpdatePassword.wsdl" />
+    <None Include="View\SystemInformation\ReportForms\DS_TTS.xsc">
+      <DependentUpon>DS_TTS.xsd</DependentUpon>
+    </None>
+    <None Include="View\SystemInformation\ReportForms\DS_TTS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_TTS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="View\SystemInformation\ReportForms\DS_TTS.xss">
+      <DependentUpon>DS_TTS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BLL.Login\" />
+    <WCFMetadataStorage Include="Service References\BLL.PublicFunction\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_CarOrder\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_Compartment\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_CreateLine\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_MakePriceRule\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_MenuManagement\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_PowerManage\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_StaffAccountManage\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_StaffInformation\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_TravellerInformation\" />
+    <WCFMetadataStorage Include="Service References\BLL.UC_UpdatePassword\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffAccountManage\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffAccountManage\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffAccountManage\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffAccountManage\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffInformation\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffInformation\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffInformation\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_StaffInformation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\png-1737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.Login\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.Login\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.Login\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.Login\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.PublicFunction\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.PublicFunction\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.PublicFunction\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.PublicFunction\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_PowerManage\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_PowerManage\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_PowerManage\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_PowerManage\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_UpdatePassword\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_UpdatePassword\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_UpdatePassword\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_UpdatePassword\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CreateLine\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CreateLine\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CreateLine\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CreateLine\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\down.png" />
+    <Resource Include="Images\mm.png" />
+    <Resource Include="Images\mostdown.png" />
+    <Resource Include="Images\mostup.png" />
+    <Resource Include="Images\Other\1.png" />
+    <Resource Include="Images\Other\2.ico" />
+    <Resource Include="Images\Other\Close.ico" />
+    <Resource Include="Images\Other\Delete.ico" />
+    <Resource Include="Images\Other\Insert.ico" />
+    <Resource Include="Images\Other\Print.ico" />
+    <Resource Include="Images\Other\Save.ico" />
+    <Resource Include="Images\Other\Select.ico" />
+    <Resource Include="Images\Other\tts.png" />
+    <Resource Include="Images\Other\Update.ico" />
+    <Resource Include="Images\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_Compartment\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_Compartment\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_Compartment\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_Compartment\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CarOrder\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CarOrder\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CarOrder\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_CarOrder\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_TravellerInformation\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_TravellerInformation\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_TravellerInformation\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_TravellerInformation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\yg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cp.png" />
+    <Resource Include="Images\lk.png" />
+    <Resource Include="Images\qx.png" />
+    <Resource Include="Images\zh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fp.png" />
+    <Resource Include="Images\gz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cc.png" />
+    <Resource Include="Images\cl.png" />
+    <Resource Include="Images\sj.png" />
+    <Resource Include="Images\yx.png" />
+    <Resource Include="Images\zd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\neji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\008.png" />
+    <Resource Include="Images\Login\029.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login\icon_Key.png" />
+    <Resource Include="Images\Login\icon_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MakePriceRule\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MakePriceRule\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MakePriceRule\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MakePriceRule\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Main1\1.png" />
+    <Resource Include="Images\Main1\2.png" />
+    <Resource Include="Images\Main1\W_01.png" />
+    <Resource Include="Images\Main1\W_02.png" />
+    <Resource Include="Images\Main1\W_03.png" />
+    <Resource Include="Images\Main1\W_04.png" />
+    <Resource Include="Images\Main1\W_05.png" />
+    <Resource Include="Images\Main1\W_06.png" />
+    <Resource Include="Images\Main1\W_07.png" />
+    <Resource Include="Images\Main1\W_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Main3\全屏 .png" />
+    <Resource Include="Images\Main3\关闭.png" />
+    <Resource Include="Images\Main3\最小化.png" />
+    <Resource Include="Images\Main3\缩小全屏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Main3\收缩菜单-右.png" />
+    <Resource Include="Images\Main3\收缩菜单-左.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Main1\收缩.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MenuManagement\BLL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MenuManagement\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MenuManagement\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL.UC_MenuManagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\syy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9fa66930-c38b-45cb-9463-6400c2af5573" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="b2e9c411-292f-4bc9-852c-a9fa3e012adf" SourceId="1" SourceUrl="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="0b5883cd-a888-422c-a7fa-083581b19417" SourceId="1" SourceUrl="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd2" />
+    <MetadataFile FileName="UC_CreateLine.wsdl" MetadataType="Wsdl" ID="db68350e-d393-425b-a443-730d7909ef91" SourceId="1" SourceUrl="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?wsdl" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="43ec5d4e-df38-423c-92a4-914c7f8e4eac" SourceId="1" SourceUrl="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="077cad5f-3f7f-441e-b456-fa9abd46a137" SourceId="1" SourceUrl="http://localhost:51039/BLL.LineManage.UC_CreateLine.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

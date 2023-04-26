@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="limitsOfPower_Loaded_SelectPermissionGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectPermissionGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="limitsOfPower_Loaded_SelectPermissionGroupResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectModular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strPermissionGroup" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectModularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="limitsOfPower_Loaded_SelectModularResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strAsOperationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectOperationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="limitsOfPower_Loaded_SelectOperationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectAllModular">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="limitsOfPower_Loaded_SelectAllModularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="limitsOfPower_Loaded_SelectAllModularResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_InsertPermissionGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strPname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPgroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strRemarks" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_InsertPermissionGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_InsertPermissionGroupResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_InsertModularOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intModularId" type="xs:int" />
+        <xs:element minOccurs="0" name="strAsOperationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_InsertModularOperationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_InsertModularOperationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_DeletePermissionGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intPGroupId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_DeletePermissionGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_DeletePermissionGroupResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_DeleteModularOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intModularDetailId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_DeleteModularOperationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_DeleteModularOperationResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_UpdatePermissionGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strPname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPgroup" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strRemarks" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intPGroupId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_UpdatePermissionGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_UpdatePermissionGroupResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_UInsertModularOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intModularId" type="xs:int" />
+        <xs:element minOccurs="0" name="strAsOperationId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="intPGroupId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Window_Loaded_UInsertModularOperationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Window_Loaded_UInsertModularOperationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
