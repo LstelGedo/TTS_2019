@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="748ff105-1bf9-46f8-b5be-18f588146eae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="b071c753-6138-4c3d-ab80-14a65d146e16" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="71819cd3-aa3a-4fa7-b89a-04b9b36b9c9b" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="69bc546f-592d-4e3c-abde-f490dc962429" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="02a04fb9-9f28-4160-aa20-e15efedf3b05" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?disco" />
+    <MetadataFile FileName="BLL3.xsd" MetadataType="Schema" ID="2523ba86-4468-47c6-b6b2-adc3a04a4760" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?xsd=xsd3" />
+    <MetadataFile FileName="UC_Compartment.wsdl" MetadataType="Wsdl" ID="1679c246-9a16-4dbc-ac05-8feb9b549561" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_Compartment.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

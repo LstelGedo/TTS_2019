@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_StaffInformation" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStaff" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_PicturePath_InputMessage">
+    <wsdl:part name="parameters" element="tns:PicturePath" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_PicturePath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PicturePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectPhoro_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoro" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectPhoro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectPhoroResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectGender_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectGender" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectGender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectWorkStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectWorkStatus" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectWorkStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectWorkStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectEmployeeType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectEmployeeType" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectEmployeeType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectEmployeeTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectPost" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_InsertStaffInformation_Loaded_SelectPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStaffInformation_Loaded_SelectPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Affirm_Click_InsertStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertStaff" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Affirm_Click_InsertStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_InsertStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Affirm_Click_UpdateStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateStaff" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Affirm_Click_UpdateStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Affirm_Click_UpdateStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Delete_Click_DelectStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Delete_Click_DelectStaff" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_btn_Delete_Click_DelectStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:btn_Delete_Click_DelectStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectWorkZheng_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectWorkZheng" />
+  </wsdl:message>
+  <wsdl:message name="UC_StaffInformation_UserControl_Loaded_SelectWorkZheng_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserControl_Loaded_SelectWorkZhengResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_StaffInformation">
+    <wsdl:operation name="UserControl_Loaded_SelectStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectStaff" message="tns:UC_StaffInformation_UserControl_Loaded_SelectStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectStaffResponse" message="tns:UC_StaffInformation_UserControl_Loaded_SelectStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PicturePath">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/PicturePath" message="tns:UC_StaffInformation_PicturePath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/PicturePathResponse" message="tns:UC_StaffInformation_PicturePath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectPhoro" message="tns:UC_StaffInformation_UserControl_Loaded_SelectPhoro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectPhoroResponse" message="tns:UC_StaffInformation_UserControl_Loaded_SelectPhoro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectGender">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectGender" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectGender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectGenderResponse" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectGender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectWorkStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectWorkStatus" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectWorkStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectWorkStatusResponse" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectWorkStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectEmployeeType">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectEmployeeType" message="tns:UC_StaffInformation_UserControl_Loaded_SelectEmployeeType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectEmployeeTypeResponse" message="tns:UC_StaffInformation_UserControl_Loaded_SelectEmployeeType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectPost">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectPost" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectPostResponse" message="tns:UC_StaffInformation_InsertStaffInformation_Loaded_SelectPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_InsertStaff" message="tns:UC_StaffInformation_btn_Affirm_Click_InsertStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_InsertStaffResponse" message="tns:UC_StaffInformation_btn_Affirm_Click_InsertStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_UpdateStaff" message="tns:UC_StaffInformation_btn_Affirm_Click_UpdateStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_UpdateStaffResponse" message="tns:UC_StaffInformation_btn_Affirm_Click_UpdateStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="btn_Delete_Click_DelectStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Delete_Click_DelectStaff" message="tns:UC_StaffInformation_btn_Delete_Click_DelectStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/btn_Delete_Click_DelectStaffResponse" message="tns:UC_StaffInformation_btn_Delete_Click_DelectStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectWorkZheng">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectWorkZheng" message="tns:UC_StaffInformation_UserControl_Loaded_SelectWorkZheng_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectWorkZhengResponse" message="tns:UC_StaffInformation_UserControl_Loaded_SelectWorkZheng_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.SystemInformation.UC_StaffInformation" type="tns:UC_StaffInformation">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserControl_Loaded_SelectStaff">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PicturePath">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/PicturePath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectPhoro">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectPhoro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectGender">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectWorkStatus">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectWorkStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectEmployeeType">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectEmployeeType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStaffInformation_Loaded_SelectPost">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/InsertStaffInformation_Loaded_SelectPost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_InsertStaff">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_InsertStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Affirm_Click_UpdateStaff">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/btn_Affirm_Click_UpdateStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="btn_Delete_Click_DelectStaff">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/btn_Delete_Click_DelectStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserControl_Loaded_SelectWorkZheng">
+      <soap:operation soapAction="http://tempuri.org/UC_StaffInformation/UserControl_Loaded_SelectWorkZheng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_StaffInformation">
+    <wsdl:port name="BLL.SystemInformation.UC_StaffInformation" binding="tns:BLL.SystemInformation.UC_StaffInformation">
+      <soap:address location="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="US_MakePriceRule_Loaded_SelectFareSection">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_SelectFareSectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_SelectFareSectionResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_SelectTicketPriceRatio">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_SelectTicketPriceRatioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_SelectTicketPriceRatioResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_SelectTicketTTPJP">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_SelectTicketTTPJPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_SelectTicketTTPJPResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertFareSection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="extents" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decline_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="fares_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="section_fares" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertFareSectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_InsertFareSectionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertTicketPriceRatio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ticket_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ticket_price_ratio" type="xs:decimal" />
+        <xs:element minOccurs="0" name="ratio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertTicketPriceRatioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_InsertTicketPriceRatioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertTicketTTPJP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="journey_paragraph" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paragraph_journey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paragraph_number" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_InsertTicketTTPJPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_InsertTicketTTPJPResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateFareSection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="extents" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decline_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="fares_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="section_fares" type="xs:decimal" />
+        <xs:element minOccurs="0" name="section_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateFareSectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_UpdateFareSectionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateTicketPriceRatio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ticket_type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ticket_price_ratio" type="xs:decimal" />
+        <xs:element minOccurs="0" name="ratio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ticket_price_ratio_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateTicketPriceRatioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_UpdateTicketPriceRatioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateTicketTTPJP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="journey_paragraph" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paragraph_journey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paragraph_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TTPJP_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_UpdateTicketTTPJPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_UpdateTicketTTPJPResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteFareSection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="section_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteFareSectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_DeleteFareSectionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteTicketPriceRatio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ticket_price_ratio_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteTicketPriceRatioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_DeleteTicketPriceRatioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteTicketTTPJP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TTPJP_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_MakePriceRule_Loaded_DeleteTicketTTPJPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_MakePriceRule_Loaded_DeleteTicketTTPJPResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectTrainTicket">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectTrainTicketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_Ticket_Loaded_SelectTrainTicketResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectStation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="line_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectStationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_Ticket_Loaded_SelectStationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectTicketByCarType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="train_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="US_Ticket_Loaded_SelectTicketByCarTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="US_Ticket_Loaded_SelectTicketByCarTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

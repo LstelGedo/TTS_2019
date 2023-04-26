@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UserControl_Loaded_SelectCertificateType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectCertificateTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectCertificateTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTravellerType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTravellerTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTravellerTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTravellerInformation_Loaded_SelectGender">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTravellerInformation_Loaded_SelectGenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertTravellerInformation_Loaded_SelectGenderResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTraveller">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTravellerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTravellerResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_InsertTraveller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_certificate_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_passenger_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_gender_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strtraveller_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date_of_birth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strcountry_or_region" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strcertificate_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strphone_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="straddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stremergency_phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stremergency_address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strzip_code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="register_date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_InsertTravellerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Affirm_Click_InsertTravellerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_UpdateTraveller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intas_certificate_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_passenger_type_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intas_gender_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strtraveller_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date_of_birth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="strage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strcountry_or_region" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strcertificate_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strphone_number" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="straddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stremergency_phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stremergency_address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strzip_code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="register_date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="inttraveller_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Affirm_Click_UpdateTravellerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Affirm_Click_UpdateTravellerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Delete_Click_DelectTraveller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inttraveller_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="btn_Delete_Click_DelectTravellerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="btn_Delete_Click_DelectTravellerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTravellerCountrySum">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectTravellerCountrySumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectTravellerCountrySumResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

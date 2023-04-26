@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UC_PowerManage" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectPermissionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectPermissionGroup" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectPermissionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectPermissionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectModular" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectModularResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectOperation_InputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectOperation" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectOperation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectOperationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectAllModular_InputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectAllModular" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_limitsOfPower_Loaded_SelectAllModular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:limitsOfPower_Loaded_SelectAllModularResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_InsertPermissionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_InsertPermissionGroup" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_InsertPermissionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_InsertPermissionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_InsertModularOperation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_InsertModularOperation" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_InsertModularOperation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_InsertModularOperationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_DeletePermissionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_DeletePermissionGroup" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_DeletePermissionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_DeletePermissionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_DeleteModularOperation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_DeleteModularOperation" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_DeleteModularOperation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_DeleteModularOperationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_UpdatePermissionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_UpdatePermissionGroup" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_UpdatePermissionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_UpdatePermissionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_UInsertModularOperation_InputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_UInsertModularOperation" />
+  </wsdl:message>
+  <wsdl:message name="UC_PowerManage_Window_Loaded_UInsertModularOperation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Window_Loaded_UInsertModularOperationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UC_PowerManage">
+    <wsdl:operation name="limitsOfPower_Loaded_SelectPermissionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectPermissionGroup" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectPermissionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectPermissionGroupResponse" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectPermissionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectModular" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectModularResponse" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectModular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectOperation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectOperation" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectOperation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectOperationResponse" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectOperation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectAllModular">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectAllModular" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectAllModular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectAllModularResponse" message="tns:UC_PowerManage_limitsOfPower_Loaded_SelectAllModular_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_InsertPermissionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertPermissionGroup" message="tns:UC_PowerManage_Window_Loaded_InsertPermissionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertPermissionGroupResponse" message="tns:UC_PowerManage_Window_Loaded_InsertPermissionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_InsertModularOperation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertModularOperation" message="tns:UC_PowerManage_Window_Loaded_InsertModularOperation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertModularOperationResponse" message="tns:UC_PowerManage_Window_Loaded_InsertModularOperation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_DeletePermissionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_DeletePermissionGroup" message="tns:UC_PowerManage_Window_Loaded_DeletePermissionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_DeletePermissionGroupResponse" message="tns:UC_PowerManage_Window_Loaded_DeletePermissionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_DeleteModularOperation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_DeleteModularOperation" message="tns:UC_PowerManage_Window_Loaded_DeleteModularOperation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_DeleteModularOperationResponse" message="tns:UC_PowerManage_Window_Loaded_DeleteModularOperation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_UpdatePermissionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_UpdatePermissionGroup" message="tns:UC_PowerManage_Window_Loaded_UpdatePermissionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_UpdatePermissionGroupResponse" message="tns:UC_PowerManage_Window_Loaded_UpdatePermissionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_UInsertModularOperation">
+      <wsdl:input wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_UInsertModularOperation" message="tns:UC_PowerManage_Window_Loaded_UInsertModularOperation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/UC_PowerManage/Window_Loaded_UInsertModularOperationResponse" message="tns:UC_PowerManage_Window_Loaded_UInsertModularOperation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL.SystemInformation.UC_PowerManage" type="tns:UC_PowerManage">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="limitsOfPower_Loaded_SelectPermissionGroup">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectPermissionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectModular">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectOperation">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="limitsOfPower_Loaded_SelectAllModular">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/limitsOfPower_Loaded_SelectAllModular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_InsertPermissionGroup">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertPermissionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_InsertModularOperation">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_InsertModularOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_DeletePermissionGroup">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_DeletePermissionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_DeleteModularOperation">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_DeleteModularOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_UpdatePermissionGroup">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_UpdatePermissionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Window_Loaded_UInsertModularOperation">
+      <soap:operation soapAction="http://tempuri.org/UC_PowerManage/Window_Loaded_UInsertModularOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UC_PowerManage">
+    <wsdl:port name="BLL.SystemInformation.UC_PowerManage" binding="tns:BLL.SystemInformation.UC_PowerManage">
+      <soap:address location="http://localhost:51039/BLL.SystemInformation.UC_PowerManage.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

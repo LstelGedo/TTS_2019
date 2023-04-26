@@ -1,0 +1,35 @@
+﻿<Window x:Class="TTS_2019.View.LineManage.WD_ChoiceLine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TTS_2019.View.LineManage"
+        mc:Ignorable="d"
+        Title="后台维护系统WPF版_选择线路" Height="550" Width="555" Loaded="Window_Loaded"  WindowStartupLocation="CenterScreen">
+    <DockPanel >
+        <WrapPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">           
+            <Button Content="选择" Style="{StaticResource  BtnSaveStyle}" Name="btnSave" Margin="5,0" Click="btn_Choice"/>
+            <Button Content="退出" Style="{StaticResource  BtnCloseStyle}" Name="btnClose" Margin="5,0" Click="btn_Close"/>
+        </WrapPanel>
+        <Grid>
+            <Grid.RowDefinitions>                
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="15*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>                
+            </Grid>
+            <DataGrid Grid.Row="1" x:Name="dgLine" AutoGenerateColumns="False" CanUserAddRows="False" Background="White"  >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="序号" Binding="{Binding number}" Width="1*" IsReadOnly="True" />
+                    <DataGridTextColumn Header="线路ID" Binding="{Binding line_id}" Visibility="Collapsed" />
+                    <DataGridTextColumn Header="线路" Binding="{Binding line_name}" Width="10*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="里程" Binding="{Binding mileage}" Width="3*" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>

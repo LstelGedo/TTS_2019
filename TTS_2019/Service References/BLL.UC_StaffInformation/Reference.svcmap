@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="db21de18-38ed-4129-849b-d83359ca3a58" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="46cf903c-1ff7-4af9-8a9f-4a7690dc7e1e" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="b90d4fad-890a-4e1c-a630-51052449f69a" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd3" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="54c17e6d-d3e9-491a-9478-6b1b8621077a" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL3.xsd" MetadataType="Schema" ID="0d007fb9-0eb5-4daa-98ff-cd62239c333f" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="b48b496a-a221-4179-adb2-68816d31e6e9" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?disco" />
+    <MetadataFile FileName="UC_StaffInformation.wsdl" MetadataType="Wsdl" ID="b04340a3-2dd2-461a-8fc9-a4bfc101156f" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_StaffInformation.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

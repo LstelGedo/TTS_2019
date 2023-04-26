@@ -1,0 +1,330 @@
+﻿<Window x:Class="TTS_2019.MainWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        xmlns:local="clr-namespace:TTS_2019"
+        Icon="Images/Other/tts.png" 
+        Name="wd_Main"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen" 
+        Title="火车后台维护系统" Height="768" Width="1366"
+        WindowChrome.WindowChrome="{DynamicResource WindowChromeKey}"
+        Loaded="Window_Loaded">
+    <!--页面资源-->
+    <Window.Resources>
+        <!--WindowStyle="None":去除窗体边框-->
+        <WindowChrome x:Key="WindowChromeKey">
+            <WindowChrome.ResizeBorderThickness>
+                <Thickness>0</Thickness>
+            </WindowChrome.ResizeBorderThickness>
+        </WindowChrome>
+        <!--重写模板:左侧按钮-->
+        <ControlTemplate x:Key="btnLeft" TargetType="Button">
+            <!--自定义故事版:动态资源-->
+            <ControlTemplate.Resources>
+                <!--第一个故事版:操作颜色渐变，边框渐变，背景渐变-->
+                <Storyboard x:Key="storyboardS1">
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[0].(GradientStop.Offset)" To="0" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[1].(GradientStop.Offset)" To="0.51" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.GradientStops)[0].(GradientStop.Offset)" To="0" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.GradientStops)[1].(GradientStop.Offset)" To="0.51" Duration="0:0:0.3"></DoubleAnimation>
+                </Storyboard>
+                <!--第二个故事版：-->
+                <Storyboard x:Key="storyboardS2">
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[0].(GradientStop.Offset)" To="0.5" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[1].(GradientStop.Offset)" To="0.51" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.GradientStops)[0].(GradientStop.Offset)" To="0.5" Duration="0:0:0.3"></DoubleAnimation>
+                    <DoubleAnimation Storyboard.TargetName="bdS" Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.GradientStops)[1].(GradientStop.Offset)" To="0.51" Duration="0:0:0.3"></DoubleAnimation>
+                </Storyboard>
+            </ControlTemplate.Resources>
+            <!--自定义视觉树-->
+            <!--左边功能按钮-->
+            <Border BorderThickness="0.5"  x:Name="bdS" RenderTransformOrigin="0.5,0.5">
+                <!--边框渐变-->
+                <Border.BorderBrush>
+                    <!--渐变画刷:使用线性渐变绘制区域。线性渐变沿直线定义渐变-->
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" >
+                        <!--使用LinearGradientBrush渐变画刷：定义一个渐变画刷，然后需要定义渐变颜色，颜色已直线形式渐变-->
+                        <!--GradientStop:定义渐变颜色与颜色渐变始点-->
+                        <GradientStop Color="#6593cf" Offset="0"/>
+                        <GradientStop Color="#6593cf" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <!--背景渐变-->
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#d2e5ff" Offset="0.5"/>
+                        <GradientStop Color="#b2d4ff" Offset="0.51"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <!--内容-->
+                <ContentPresenter 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    TextBlock.Foreground="{TemplateBinding Foreground}" >
+                </ContentPresenter>
+            </Border>
+            <!--end 自定义视觉树-->
+            <!--事件触发器-->
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard Storyboard="{StaticResource storyboardS1}"></BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard Storyboard="{StaticResource storyboardS2}"></BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <!--放大、缩小按钮-->
+        <Style x:Key="wBtn" TargetType="Button">
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Width" Value="48"/>          
+            <Setter Property="BorderBrush" Value="SkyBlue"/>
+            <Setter Property="FontWeight" Value="Black"/>          
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Offset="0.5" Color="#bed3e7"/>
+                        <GradientStop Offset="0.51" Color="#9ab2cd"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            
+            
+        </Style>
+        <!--关闭按钮-->
+        <Style x:Key="wBtnClose" TargetType="Button">
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Width" Value="48"/>
+            <Setter Property="BorderBrush" Value="SkyBlue"/>
+            <Setter Property="FontWeight" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Offset="0.5" Color="#e1998b"/>
+                        <GradientStop Offset="0.51" Color="#c96a58"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <!--页面布局-->
+    <DockPanel>
+        <!--头部标题-->
+        <Grid DockPanel.Dock="Top">
+            <!--背景上下渐变-->
+            <Border x:Name="fore" BorderThickness="0.5" Margin="-1">
+                <Border.BorderBrush>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#6593cf" Offset="0"/>
+                        <GradientStop Color="#6593cf" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0"  EndPoint="0,1">
+                        <!--描述渐变中转换点的位置和颜色。-->
+                        <GradientBrush.GradientStops>
+                            <GradientStop Color="#d2e5ff" Offset="0.5"/>
+                            <GradientStop Color="#b2d4ff" Offset="0.51"/>
+                        </GradientBrush.GradientStops>
+
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border >
+            <!--背景左右渐变-->
+            <Border BorderThickness="0.5" Opacity="0.5" Margin="-1">
+                <Border.BorderBrush>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#6593cf" Offset="0"/>
+                        <GradientStop Color="#6593cf" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0"  EndPoint="1,0">
+                        <GradientBrush.GradientStops>
+                            <GradientStop Color="#d2e5ff" Offset="0.5"/>
+                            <GradientStop Color="#9fbad6" Offset="0.7"/>
+                        </GradientBrush.GradientStops>
+
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <!--标题内容-->
+            <TextBlock Grid.Column="0" Text="火车售票系统后台维护" Foreground="#15428b" FontSize="30" FontFamily="STSong" FontWeight="Black" Padding="8"/>
+            <!--标题按钮-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"> 
+                <!--最小化-->
+                <Button x:Name="btn_Min" Style="{StaticResource wBtn}" Click="btn_Min_Click">
+                    <!--直线-->
+                    <Line Stroke="White" StrokeThickness="4" X1="0" Y1="0" X2="20" Y2="0"/>
+                </Button>
+                <!--最大化-->
+                <Button x:Name="btn_Normal" Style="{StaticResource wBtn}" Click="btn_Normal_Click">
+                    <!--矩形-->
+                    <Rectangle  Stroke="White" StrokeThickness="4" Width="20" Height="20"/>
+                </Button>
+                <!--最大化-->
+                <Button x:Name="btn_Max" Style="{StaticResource wBtn}" Click="btn_Max_Click">
+                    <!--矩形-->
+                    <Rectangle  Stroke="White" StrokeThickness="4" Width="20" Height="20"/>
+                </Button>
+                <!--关闭-->
+                <Button x:Name="btn_Exit" Style="{StaticResource wBtnClose}" Click="btn_Exit_Click">
+                    <Grid>
+                        <!--直线：StrokeStartLineCap和StrokeEndLineCap尖角-->
+                        <Line Stroke="White" StrokeThickness="4" X1="0" Y1="0" X2="17" Y2="17" StrokeStartLineCap="Triangle" StrokeEndLineCap="Triangle"/>
+                        <!--直线-->
+                        <Line Stroke="White" StrokeThickness="4" X1="0" Y1="17" X2="17" Y2="0" StrokeStartLineCap="Triangle" StrokeEndLineCap="Triangle"/>
+                    </Grid>
+                </Button>
+
+            </StackPanel>
+           
+        </Grid>
+        <!--页面内容-->
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <!--左边菜单-->
+            <Grid Grid.Column="0">               
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="9*"/>
+                </Grid.RowDefinitions>
+                <!--头像信息-->
+                <Grid Grid.Row="0">
+                    <Grid.Background>
+                        <LinearGradientBrush StartPoint="0,0"  EndPoint="0,1">
+                            <GradientBrush.GradientStops>
+                                <GradientStop Color="#FFF5F7F7" Offset="0.5"/>
+                                <GradientStop Color="#FFE1EEF3" Offset="0.51"/>
+                            </GradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!--头像 Stretch：自适应-->
+                    <Image Grid.Row="0" x:Name="MainTopImg_png" Source="Images\neji.png" Stretch="Uniform"/>
+                    <!--操作员信息-->
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock x:Name="TbDepartment" Text="部门：" Foreground="#FF79B3EE" FontSize="16" FontFamily="STSong" FontWeight="Bold"/>
+                        <TextBlock x:Name="TbEmployee" Text="操作员"  Foreground="#FF79B3EE" FontSize="16" FontFamily="STSong" FontWeight="Bold"/>
+                    </StackPanel>
+                    <!--系统时间-->
+                    <TextBlock  Grid.Row="2" x:Name="txt_Time" Foreground="#FF79B3EE" FontSize="16" FontFamily="STSong" FontWeight="Bold" Text="2019-05-20 09:07:00" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <!--操作菜单-->
+                <StackPanel x:Name="gridLeft" Grid.Row="1" Orientation="Vertical">
+                    <!--功能导航-->
+                    <Border Tag="-1"  Height="38" BorderThickness="0.6" VerticalAlignment="Top">
+                        <!--背景渐变-->
+                        <Border.BorderBrush>
+                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" >
+                                <GradientStop Color="#6593cf" Offset="0"/>
+                                <GradientStop Color="#6593cf" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#d2e5ff" Offset="0.5"/>
+                                <GradientStop Color="#b2d4ff" Offset="0.51"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <TextBlock  Foreground="#15428b"  Text="功能导航" VerticalAlignment="Center" HorizontalAlignment="Center"  FontFamily="STSong" FontWeight="Black" FontSize="21.333" TextDecorations="{x:Null}"  Height="32"/>
+                    </Border>
+                    <!--操作按钮：HorizontalAlignment自适应-->
+                    <!--系统管理-->
+                    <Button  Foreground="#15428b" FontFamily="STSong" Tag="1" x:Name="btnSystemInformation" Template="{StaticResource btnLeft}" Content="系统管理" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="38" FontWeight="Bold" FontSize="14.667" Click="LeftButtonClick"/>
+                    <!--系统管理:菜单明细-->
+                    <!--而Collapsed的话,在不可视的基础上,还能将元素在画面上的占位符清除,元素彻底不影响画面.-->
+                    <Border Visibility="Collapsed" Tag="0" x:Name="btnSystemInformationBorder" BorderThickness="5,1,5,5"  Panel.ZIndex="-50" VerticalAlignment="Top" 
+                            HorizontalAlignment="Stretch">
+                        <Grid  VerticalAlignment="Top">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <!--定义矢量按钮-->
+                                <CalendarButton x:Name="btnUpdatePassword"  Content="修改密码" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnUpdatePassword_Click"/>
+                                <CalendarButton x:Name="btnStaffInformation"   Content="员工管理" VerticalAlignment="Top"  BorderBrush="{x:Null}" Click="btnStaffInformation_Click"/>
+                                <CalendarButton x:Name="btnTravellerInformation"   Content="旅客管理" VerticalAlignment="Top"  BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnStaffAccountManage"  Content="员工账户管理" VerticalAlignment="Top"  BorderBrush="{x:Null}" Click="btnStaffAccountManage_Click"/>
+                                <CalendarButton x:Name="btnPowerManage"  Content="权限管理" VerticalAlignment="Top"  BorderBrush="{x:Null}" Click="btnPowerManage_Click"/>
+                                <CalendarButton x:Name="btnSystemOperateLog"  Content="系统操作日志" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnEmail"  Content="QQ邮箱" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnMenuManagement"  Content="菜单管理" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <!--线路管理-->
+                    <Button  Foreground="#15428b" FontFamily="STSong" Tag="2" x:Name="btnLineManage" Template="{StaticResource btnLeft}" Content="线路管理" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="38" FontWeight="Bold" FontSize="14.667" Click="LeftButtonClick"/>
+                    <!--线路管理:菜单明细-->
+                    <Border Visibility="Collapsed" Tag="0" x:Name="btnLineManageBorder" BorderThickness="5,1,5,5"  Panel.ZIndex="-50" VerticalAlignment="Top" 
+                            HorizontalAlignment="Stretch">
+                        <Grid VerticalAlignment="Top">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+                                <!--定义矢量按钮-->
+                                <CalendarButton x:Name="btnCreateLine"    Content="生成线路" VerticalAlignment="Top"  BorderBrush="{x:Null}" Click="btnCreateLine_Click"/>
+
+                                <CalendarButton x:Name="btnStationManage"  Content="站点管理" VerticalAlignment="Top"  BorderBrush="{x:Null}" Click="btnStationManage_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <!--车次管理-->
+                    <Button Foreground="#15428b" FontFamily="STSong" Tag="3" x:Name="btnTrainOrder" Template="{StaticResource btnLeft}" Content="车次管理" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="38" FontWeight="Bold" FontSize="14.667" Click="LeftButtonClick"/>
+                    <!--车次管理:菜单明细-->
+                    <Border Visibility="Collapsed" Tag="0" x:Name="btnTrainOrderBorder" BorderThickness="5,1,5,5"  Panel.ZIndex="-50" VerticalAlignment="Top" 
+                            HorizontalAlignment="Stretch">
+                        <Grid VerticalAlignment="Top">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <!--定义矢量按钮-->
+                                <CalendarButton x:Name="btnCompartment" Content="车辆管理" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnCompartment_Click"/>
+                                <CalendarButton x:Name="btnCarOrder"    Content="车次管理" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnCarOrder_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <!--票务管理-->
+                    <Button  Foreground="#15428b" FontFamily="STSong" Tag="4" x:Name="btnTicketTask" Template="{StaticResource btnLeft}" Content="票务管理" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="38" FontWeight="Bold" FontSize="14.667" Click="LeftButtonClick"/>
+                    <!--票务管理:菜单明细-->
+                    <Border Visibility="Collapsed" Tag="0" x:Name="btnTicketTaskBorder" BorderThickness="5,1,5,5"  Panel.ZIndex="-50" VerticalAlignment="Top" 
+                            HorizontalAlignment="Stretch">
+                        <Grid VerticalAlignment="Top">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <!--定义矢量按钮-->
+                                <CalendarButton x:Name="btnTicket" Content="车票生成" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnTicket_Click"/>
+                                <CalendarButton x:Name="btnTicketDetails" Content="车票分配" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnTicketDetails_Click"/>
+                                <CalendarButton x:Name="btnTicketPrice" Content="票价规则" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="btnTicketPrice_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <!--数据统计-->
+                    <Button  Foreground="#15428b" FontFamily="STSong" Tag="5" x:Name="btnDataStatistics" Template="{StaticResource btnLeft}" Content="数据统计" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="38" FontWeight="Bold" FontSize="14.667" Click="LeftButtonClick"/>
+                    <!--数据统计:菜单明细-->
+                    <Border Visibility="Collapsed" Tag="0" x:Name="btnDataStatisticsBorder" BorderThickness="5,1,5,5"  Panel.ZIndex="-50" VerticalAlignment="Top" 
+                            HorizontalAlignment="Stretch">
+                        <Grid VerticalAlignment="Top">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <!--定义矢量按钮-->
+                                <CalendarButton x:Name="btnFirstPage" Content="数据统计" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnSaleStatistics" Content="销售金额统计" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnSitePeopleStream"  Content="各站旅客流量" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                                <CalendarButton x:Name="btnWebShopTicketNumber"  Content="网上账户购票次数" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Grid>
+            <!--右边嵌套页-->
+            <Grid Grid.Column="1" Background="White">
+                <TabControl Name="tab_Main"  Tag="100"></TabControl>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>
+

@@ -1,0 +1,66 @@
+﻿<Window x:Class="TTS_2019.View.LineManage.WD_InsertCreateLine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ctr="clr-namespace:TTS_2019.Tools.Controls"
+        Icon="/Images/Other/tts.png"
+        Title="后台维护系统WPF版_新增线路" 
+        Height="573" Width="770"  
+        WindowStartupLocation="CenterScreen" 
+        Loaded="CreateLine_Loaded">
+    <!--泊靠式面板-->
+    <DockPanel LastChildFill="True">
+        <!--操作菜单-->
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal" ItemHeight="80" HorizontalAlignment="Center">
+            <Button Content="重置" Style="{StaticResource   BtnPrintStyle}" Name="btnReset" Margin="20,0" Click="btn_Reset_Click"/>
+            <Button Content="保存" Style="{StaticResource  BtnSaveStyle}" Name="btnSave" Margin="20,0" Click="btn_Affirm_Click"/>
+            <Button Content="取消" Style="{StaticResource  BtnCloseStyle}" Name="btnClose" Click="btn_Cancel_Click" Margin="20,0"/>
+        </WrapPanel>
+        <Border >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="14*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="出发站点：" Grid.Row="1" Grid.Column="1"/>
+                <ctr:AutoComplete Grid.Row="1" Grid.Column="2" x:Name="cbo_StarStation"  SelectedValuePath="site_id" DisplayMemberPath="site_name" PatternChanged="station_PatternChanged"  Delay="500"/>
+                <TextBlock Text="目的站点：" Grid.Row="1" Grid.Column="4"/>
+                <ctr:AutoComplete Grid.Row="1" Grid.Column="5" x:Name="cbo_EndStation" DropDownClosed="cbo_EndStation_SelectionChanged" SelectedValuePath="site_id" DisplayMemberPath="site_name" 
+                          PatternChanged="endstation_PatternChanged"  Delay="500"/>
+                <Button Grid.Row="1" Grid.Column="7" Content="生成线路" Style="{StaticResource BtnInsertStyle}" Click="Button_Click" />
+                <TextBlock Text="线路名称：" Grid.Row="3" Grid.Column="1"/>
+                <TextBox Grid.Row="3" Grid.Column="2" x:Name="txt_LineName" SelectionChanged="txt_LineName_SelectionChanged"/>
+                <TextBlock Text="助记码：" Grid.Row="3" Grid.Column="4"/>
+                <TextBox  Grid.Row="3" Grid.Column="5" x:Name="txt_Code"/>
+                <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="可选线路" Grid.Column="0">
+                        <DataGrid  x:Name="dg_SelectLine" CanUserAddRows="False"
+                                  SelectionChanged="SelectLine_SelectionChanged" Background="White">
+                        </DataGrid>
+                    </GroupBox>
+                    <GroupBox Header="最终线路" Grid.Column="1">
+                        <DataGrid  x:Name="dg_TheEndLine" CanUserAddRows="False" Background="White">
+                        </DataGrid>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>

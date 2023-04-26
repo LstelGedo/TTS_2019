@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="TTS_2019.View.SystemInformation.UC_MenuManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:TTS_2019.Tools.Utils"   
+             Name="UCMenuManagement"
+             Loaded="UCMenuManagement_Loaded">
+    <!--菜单管理-->
+    <!--窗口：动画资源-->
+    <UserControl.Resources>
+        <!--图片资源-->
+        <controls:ConvertImageAndByte x:Key="convertImageAndByte" />
+    </UserControl.Resources>    
+    <!--布局-->
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Grid>
+                <!--分列-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="13*"/>
+                </Grid.RowDefinitions>
+                <!--菜单按钮-->
+                <WrapPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="搜索："/>
+                    <TextBox x:Name="txt_Select" ToolTip="请输入：名称\编码\上级菜单" Width="300"  VerticalAlignment="Center" HorizontalAlignment="Left" SelectionChanged="txt_Select_SelectionChanged" Height="23" Background="Transparent"/>
+                    <Button Content="新增" Style="{StaticResource  BtnInsertStyle}" Name="btnInsert" Click="btnInsert_Click" Margin="20,0"/>                   
+                </WrapPanel>                
+                <!--表格-->
+                <DataGrid Grid.Row="2" x:Name="dgMenuManagement" IsReadOnly="True"  HorizontalAlignment="Stretch" AutoGenerateColumns="False" 
+                  CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single" 
+                  CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False" Background="White" LoadingRow="dgMenuManagement_LoadingRow">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="菜单ID"  Visibility="Collapsed" Binding="{Binding modular_id}" Width="2*"/>
+                        
+                        <DataGridTextColumn Header="上级菜单ID"  Visibility="Collapsed" Binding="{Binding f_id}" Width="2*"/>
+                        <DataGridTemplateColumn  Width="40" Header="序号" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type DataGridRow}}, Path=Header}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="名称" Binding="{Binding name }" Width="3*" />
+                        <DataGridTextColumn Header="编码" Binding="{Binding code }" Width="3*" />
+                        <DataGridTextColumn Header="上级菜单"  Visibility="Collapsed" Binding="{Binding f_name}" Width="3*"/>
+                        <DataGridTextColumn Header="图标名称" Visibility="Collapsed" Binding="{Binding icon }" Width="3*" />
+                        <DataGridTemplateColumn Header="图标" Width="2*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate  >
+                                    <Grid Background="Transparent">
+                                        <Image Source="{Binding iconUri}" Stretch="Fill" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="类型"  Binding="{Binding type }" Width="2*"/>
+                        <DataGridTemplateColumn Header="操作" MinWidth="50"  Width="2*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image  Height="20" Width="20" Source="/Images/Other/Update.ico" Margin="0,0,10,0" MouseLeftButtonDown="Img_Update"/>
+                                        <Image Height="20" Width="20" Source="/Images/Other/Close.ico" Margin="0,0,10,0" MouseLeftButtonDown="Img_Delete"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </DockPanel>
+    </DockPanel>
+    <!--布局  END-->
+</UserControl>

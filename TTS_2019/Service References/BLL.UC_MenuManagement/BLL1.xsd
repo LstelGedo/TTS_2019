@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51039/BLL.SystemInformation.UC_MenuManagement.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="frmMenuManagement_SelectModular">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_SelectModularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmMenuManagement_SelectModularResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserControl_Loaded_SelectPhoroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserControl_Loaded_SelectPhoroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_SelectLastMenu">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_SelectLastMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmMenuManagement_SelectLastMenuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_InsertMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strmodular_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strmodular_code" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="strmodular_icon" nillable="true" type="q1:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="intf_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_InsertMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmMenuManagement_InsertMenuResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_UpdatetMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strmodular_name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strmodular_code" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="strmodular_icon" nillable="true" type="q2:ArrayOfbase64Binary" />
+        <xs:element minOccurs="0" name="intf_id" type="xs:int" />
+        <xs:element minOccurs="0" name="intmodular_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strOldLuJing" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTxtLuJing" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_UpdatetMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmMenuManagement_UpdatetMenuResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_DeleteMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intmodular_id" type="xs:int" />
+        <xs:element minOccurs="0" name="strFileName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frmMenuManagement_DeleteMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="frmMenuManagement_DeleteMenuResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

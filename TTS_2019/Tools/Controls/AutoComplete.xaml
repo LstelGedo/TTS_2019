@@ -1,0 +1,10 @@
+﻿<ComboBox x:Class="TTS_2019.Tools.Controls.AutoComplete"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TTS_2019.Tools.Controls"
+             IsEditable="True" StaysOpenOnEdit="True" IsTextSearchEnabled="False"
+             LostFocus="ComboBox_LostFocus" 
+             SelectionChanged="ComboBox_SelectionChanged">
+</ComboBox>

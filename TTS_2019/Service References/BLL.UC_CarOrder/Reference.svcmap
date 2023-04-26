@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="570b2a72-17a3-407d-98df-cdd77c530c92" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="b38694fc-f73d-4aec-a1d8-958c66edb917" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="1afef234-8f5c-47b6-ab36-159e409cee6a" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc?xsd=xsd0" />
+    <MetadataFile FileName="UC_CarOrder.wsdl" MetadataType="Wsdl" ID="922dd590-cb30-479b-ac1d-dc7cb6e7bad7" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc?wsdl" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="2442f505-c122-4cea-b38d-04cdc3870ad1" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="bfda2188-1484-4fb7-b378-cbf879604666" SourceId="1" SourceUrl="http://localhost:51039/BLL.TrainOrder.UC_CarOrder.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f027124d-91c1-4557-b321-ee22aaaaac42" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UC_UpdatePassword.wsdl" MetadataType="Wsdl" ID="869274f1-484a-4986-a801-dc415b6a6d18" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc?wsdl" />
+    <MetadataFile FileName="BLL.xsd" MetadataType="Schema" ID="2163c3f8-8292-47a6-9ed6-82efcf61d4f4" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL1.xsd" MetadataType="Schema" ID="7c2d7c1f-2ad9-4a26-8652-6334c9aa0251" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL2.xsd" MetadataType="Schema" ID="8596cbd3-2b3a-417e-bb73-e53e9d0d0d29" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL.disco" MetadataType="Disco" ID="5309fe7b-4e88-4586-a8cc-55f5c7c237ea" SourceId="1" SourceUrl="http://localhost:51039/BLL.SystemInformation.UC_UpdatePassword.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
